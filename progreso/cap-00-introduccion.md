@@ -13,7 +13,8 @@
 - [ ] TDD, DDD, and Event-Driven Architecture
 - [ ] Who Should Read This Book
 - [ ] A Brief Overview of What You'll Learn
-- [ ] Example Code and Coding Along · License · Conventions
+- [ ] Example Code and Coding Along · License · Conventions Used in This Book
+- [ ] O'Reilly Online Learning · How to Contact O'Reilly · Acknowledgments _(preliminares)_
 
 ### Introducción
 - [ ] Why Do Our Designs Go Wrong?

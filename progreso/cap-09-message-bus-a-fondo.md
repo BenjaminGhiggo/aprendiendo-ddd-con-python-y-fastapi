@@ -20,6 +20,8 @@
   - [ ] A New Method on the Domain Model
 - [ ] 9.e Optionally: Unit Testing Event Handlers in Isolation with a Fake Message Bus
 - [ ] 9.f Wrap-Up
+  - [ ] What Have We Achieved?
+  - [ ] Why Have We Achieved?
 
 ## Figuras del capítulo (§3.8)
 - [ ] Figure 9-1. Before
