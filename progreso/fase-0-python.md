@@ -1,14 +1,14 @@
 # Fase 0 — Python desde cero
 
 > No está en el libro: es el cimiento (regla 5) para poder leerlo. Micro-pasos.
-> Estado: ⬜ pendiente
+> Estado: 🟡 en curso (Lección 00)
 
 Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
 ## Lecciones
 
-- [ ] **00 — ¿Qué es ejecutar un programa?** (instalar Python + `uv`)
-  - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
+- [ ] **00 — ¿Qué es ejecutar un programa?** (instalar Python + `uv`) — 🟡 en curso
+  - [ ] Ejercicio (tu_turno.py) · [ ] Recuerdo · _(pytest se introduce en la lección 08)_
 - [ ] **01 — Variables y tipos**
   - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
 - [ ] **02 — Condicionales (`if`/`else`)**
