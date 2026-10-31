@@ -41,6 +41,15 @@ libro *Architecture Patterns with Python* (Cosmic Python).
   imagen. El aprendiz los pega en un previsualizador. Deben **reproducir fielmente
   las figuras del libro**.
 
+## Herramientas y Git
+
+- **Python 3.12 exacto** (`.python-version` = 3.12; `requires-python = ">=3.12,<3.13"`).
+  Nunca 3.13 ni otra versión.
+- **uv** para entorno y dependencias.
+- **Git para todo:** rama de integración `ccr-b56bf27c-qa5zqh`; una rama por
+  lección (`leccion-NN-nombre`) o ajuste (`config/...`, `chore/...`); commits
+  pequeños; merge a integración al terminar. Git también se explica como aprendizaje.
+
 ## Estructura fija de cada lección (`lecciones/NN-nombre/`)
 
 0. La pregunta (W→X) · 1. Objetivo · 2. Cita de la fuente · 3. El dolor/necesidad ·

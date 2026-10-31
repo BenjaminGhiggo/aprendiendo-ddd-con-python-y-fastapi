@@ -186,10 +186,23 @@ lecciones/NN-nombre/
 
 ## 6. Herramientas
 
-- **Python 3.12+**
+- **Python 3.12** (exacto; fijado en `.python-version` y `requires-python = ">=3.12,<3.13"`).
+  No se usa 3.13 ni otra versión.
 - **uv** para entorno y dependencias (regla 8)
 - **pytest** para las pruebas
 - **FastAPI** para la capa web (regla 4)
+
+### 6.1 Flujo de trabajo con Git
+
+Todo lo que hagamos y aprendamos se registra con **Git**: ramas y commits.
+
+1. **Rama de integración:** `ccr-b56bf27c-qa5zqh` (la designada por la sesión).
+2. **Una rama por trabajo/lección**, partiendo de la de integración:
+   - lecciones → `leccion-NN-nombre` (ej. `leccion-01-variables`)
+   - configuración/ajustes → `config/...` o `chore/...`
+3. **Commits pequeños y descriptivos** a medida que avanzamos (no uno gigante al final).
+4. Al terminar, se **mergea** la rama de trabajo en la de integración y se hace push.
+5. Git también es **material de aprendizaje**: explicamos cada comando que usamos.
 
 ---
 
