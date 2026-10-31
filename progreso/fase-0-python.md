@@ -7,8 +7,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
 ## Lecciones
 
-- [ ] **00 — ¿Qué es ejecutar un programa?** (instalar Python + `uv`) — 🟡 en curso
-  - [ ] Ejercicio (tu_turno.py) · [ ] Recuerdo · _(pytest se introduce en la lección 08)_
+- [x] **00 — ¿Qué es ejecutar un programa?** (instalar Python + `uv`) — ✅ completa
+  - [x] Ejercicio (tu_turno.py) · [x] Recuerdo · _(pytest se introduce en la lección 08)_
 - [ ] **01 — Variables y tipos**
   - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
 - [ ] **02 — Condicionales (`if`/`else`)**
