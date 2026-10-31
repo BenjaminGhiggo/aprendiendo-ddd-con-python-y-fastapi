@@ -210,4 +210,6 @@ excepciones, módulos, entorno con `uv`, y primer `pytest`.
 7. Aggregates & Consistency (cap. 7)
 8. Events & Message Bus y arquitectura dirigida por eventos (caps. 8–13)
 
-El avance se registra en [`PROGRESO.md`](PROGRESO.md).
+El avance se registra en [`progreso/`](progreso/) — un índice general
+([`progreso/README.md`](progreso/README.md)) y un archivo por capítulo con sus
+secciones y figuras.

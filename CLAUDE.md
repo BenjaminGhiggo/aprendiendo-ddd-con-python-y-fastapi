@@ -47,5 +47,6 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 4. Explicación paso a paso (sin recortar) · 5. Figura del libro + diagrama Mermaid (código) ·
 6. Árbol de archivos · 7. Tu turno (huecos) · 8. Prueba pytest · 9. Preguntas de recuerdo.
 
-El avance se registra en `PROGRESO.md`.
+El avance se registra en la carpeta `progreso/` (índice en `progreso/README.md`
+y un archivo por capítulo con secciones y figuras).
 Fuente citable: `docs/fuente/Architecture-Patterns-with-Python.md`.
