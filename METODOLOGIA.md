@@ -9,6 +9,7 @@ La fuente está en [`docs/fuente/`](docs/fuente/):
 
 - `Architecture-Patterns-with-Python.md` — **fuente citable** (texto del libro).
 - `Architecture-Patterns-with-Python.pdf` — PDF original del libro (497 págs).
+- `imagenes/` — **figuras rescatadas del PDF** (ver §3.8).
 
 > El libro y su versión online se distribuyen bajo licencia
 > **Creative Commons CC BY-NC-ND**:
@@ -28,8 +29,8 @@ La fuente está en [`docs/fuente/`](docs/fuente/):
 
 ## 2. Las 9 reglas de formato
 
-Toda lección y toda respuesta deben cumplir estas reglas (son el "cómo se ve"
-cada respuesta):
+Toda lección y toda respuesta deben cumplir estas reglas (el "cómo se ve" cada
+respuesta):
 
 1. **Justificar el código desde la fuente.** Cada pieza de código es resultado de
    aplicar lo que la fuente enseña; se explica y justifica por qué se escribe así.
@@ -43,14 +44,11 @@ cada respuesta):
    su capítulo/sección.
 7. **Mostrar siempre el árbol de archivos.**
 8. **UV para dependencias.** Se usa [`uv`](https://docs.astral.sh/uv/).
-9. **Explicar cada diagrama Mermaid.**
+9. **Diagramas en Mermaid y explicados.** (Formato preciso en §3.9.)
 
 ---
 
 ## 3. Cómo se aprende (el "cómo" pedagógico)
-
-Estas cuatro decisiones definen la experiencia. Cada una está respaldada por la
-fuente.
 
 ### 3.1 Ritmo: micro-pasos
 
@@ -82,12 +80,63 @@ fuente.
 Cada lección cierra comprobando que el concepto quedó, con las cuatro vías:
 
 1. **Ejercicios prácticos** — retos de código que resuelves tú (los "huecos").
-2. **Pruebas automáticas (`pytest`)** — tu código debe pasar los tests; es el
-   semáforo objetivo de "funciona".
-3. **Preguntas de recuerdo** — al final explicas el concepto con tus palabras,
-   sin mirar.
-4. **Mini-proyecto que crece** — todo se integra en **un único proyecto que
-   evoluciona** lección a lección.
+2. **Pruebas automáticas (`pytest`)** — tu código debe pasar los tests.
+3. **Preguntas de recuerdo** — explicas el concepto con tus palabras, sin mirar.
+4. **Mini-proyecto que crece** — todo se integra en un único proyecto que
+   evoluciona lección a lección (ver §4).
+
+### 3.5 Aprendizaje dirigido por preguntas (requisitos que cambian)
+
+- **Toda lección nace de una pregunta real** del tipo:
+  > *"Tengo **W** (lo que ya hice). Ahora me piden **X**: una regla o funcionalidad
+  > **nueva**, **modificada** o **eliminada**. ¿Qué debo hacer? ¡Estoy perdido!"*
+- A partir de ese "estoy perdido" trabajamos: nombramos el dolor, decidimos el
+  cambio mínimo y lo justificamos desde la fuente. Nunca se introduce un concepto
+  "porque toca", sino porque **un requisito lo exige**.
+- Justificación (fuente):
+  > *"A New Requirement Leads Us to a New Architecture."* (Cap. 9)
+  > *"...the most obvious way of doing things isn't always the way that helps you
+  > manage complexity and evolving requirements."* (Preface → Why Python?)
+
+### 3.6 No recortar pasos intermedios
+
+- Nunca saltar de A a C escondiendo B. En particular, la secuencia
+  **clase → instancia → objeto → uso** se muestra **paso por paso**, no todo en
+  una sola línea.
+- Si aparece una instancia, un objeto o un valor intermedio, **se nombra y se
+  ve**. Comprimir "deja en el aire" a quien aprende.
+
+### 3.7 Lo simple antes que lo avanzado ("low gear")
+
+- Se usa la forma **explícita y simple** aunque sea más larga (p. ej. un `for`
+  explícito antes que una *list comprehension*).
+- Un método/forma "idiomática" avanzada se introduce **solo cuando el dolor lo
+  pide** y se justifica desde la fuente; nunca por elegancia ni por ahorrar líneas.
+- Justificación (fuente):
+  > *"When starting a journey, the bicycle needs to be in a low gear so that it can
+  > overcome inertia."* (Cap. 5 → High and Low Gear)
+
+### 3.8 Las figuras de la fuente no se omiten
+
+- El `.md` perdió las imágenes del libro (solo conserva los pies de figura). Las
+  imágenes **sí están en el PDF**.
+- Para **cada figura** que un capítulo referencie, la lección debe:
+  1. **Rescatar y mostrar la imagen original** desde el PDF, guardada en
+     `docs/fuente/imagenes/fig-N-M.png`.
+  2. **Reproducirla como diagrama Mermaid** (código; ver §3.9) **fiel a la figura
+     del libro**.
+  3. **Explicarla en prosa**: qué muestra y por qué importa.
+- Lo mismo aplica a **cualquier imagen que el aprendiz comparta**: se analiza y se
+  usa, nunca se ignora.
+
+### 3.9 Los diagramas se entregan como código Mermaid
+
+- Los diagramas se dan **como bloque de código Mermaid** (el aprendiz lo pega en
+  un previsualizador). **No** se renderizan a imagen.
+- Deben **reproducir fielmente las figuras que da el libro** (mismos nombres,
+  cajas, relaciones y sentido). Cuando el diagrama venga de una figura concreta,
+  se cita (p. ej. *"Figure 1-3"*).
+- Siempre acompañados de su **explicación en prosa** (regla 9).
 
 ---
 
@@ -110,15 +159,28 @@ Cada lección cierra comprobando que el concepto quedó, con las cuatro vías:
 Cada lección vive en `lecciones/NN-nombre/` y sigue siempre este guion
 (en pasos numerados, regla 3):
 
+0. **🧭 La pregunta** — *"Tengo W, ahora me piden X, ¿qué hago? ¡estoy perdido!"* (§3.5)
 1. **Objetivo** — el único concepto nuevo de esta micro-lección.
 2. **Cita de la fuente** — el fragmento que motiva o respalda el concepto.
-3. **El dolor/necesidad** — por qué hace falta esto ahora (regla 2).
-4. **Explicación paso a paso** — con el código base ya escrito y comentado.
-5. **Diagrama Mermaid** (cuando aporte) + su explicación en prosa (regla 9).
+3. **El dolor / necesidad** — por qué lo que tenía ya no basta (regla 2).
+4. **Explicación paso a paso** — con el código base escrito, comentado y **sin
+   recortar pasos** (§3.6), en su **forma simple** (§3.7).
+5. **Figura y/o diagrama** — imagen original del libro si la hay (§3.8) + diagrama
+   **Mermaid en código** fiel a la figura (§3.9), con su explicación (regla 9).
 6. **Árbol de archivos** actualizado (regla 7).
-7. **Tu turno (huecos / ejercicio)** — las partes que escribes tú.
-8. **Prueba `pytest`** — el test que tu código debe pasar.
-9. **Preguntas de recuerdo** — para cerrar.
+7. **Tu turno (huecos / ejercicio)** — las partes que escribes tú (§3.2).
+8. **Prueba `pytest`** — el test que tu código debe pasar (§3.3, regla 8 con `uv`).
+9. **Preguntas de recuerdo** — para cerrar (§3.4).
+
+Carpeta tipo de una lección:
+
+```
+lecciones/NN-nombre/
+├── diagramas/
+│   └── NN-concepto.mmd     # código Mermaid (se pega en un previsualizador)
+├── codigo.py
+└── test_codigo.py
+```
 
 ---
 
@@ -147,3 +209,5 @@ excepciones, módulos, entorno con `uv`, y primer `pytest`.
 6. Unit of Work (cap. 6)
 7. Aggregates & Consistency (cap. 7)
 8. Events & Message Bus y arquitectura dirigida por eventos (caps. 8–13)
+
+El avance se registra en [`PROGRESO.md`](PROGRESO.md).

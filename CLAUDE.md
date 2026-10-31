@@ -15,8 +15,11 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 - **Rol: pair programming** — yo escribo la base y dejo huecos `# TODO:` para que
   el aprendiz escriba las partes clave; luego comparo con la referencia.
 - **Tests primero** cuando haya lógica no trivial (pytest antes que implementación).
-- **Comprobación (las 4):** ejercicios prácticos + pytest + preguntas de recuerdo
-  + un mini-proyecto único que crece (el "allocation" del libro).
+- **Dirigido por preguntas** — cada lección nace de "tengo W, me piden X, ¿qué hago?".
+- **No recortar pasos** — clase→instancia→objeto→uso, cada uno visible.
+- **Lo simple antes que lo avanzado** — forma explícita; lo idiomático solo con dolor.
+- **Comprobación (las 4):** ejercicios + pytest + preguntas de recuerdo + mini-proyecto
+  único que crece (el "allocation" del libro).
 
 ## Las 9 reglas de formato
 
@@ -28,12 +31,21 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 6. Cita el fragmento exacto de la fuente en cada respuesta.
 7. Muestra el árbol de archivos en cada paso.
 8. Instala dependencias con **uv**.
-9. Dibuja diagramas en Mermaid y explícalos.
+9. Diagramas en Mermaid y explicados.
+
+## Figuras y diagramas
+
+- **Las figuras del libro NO se omiten** (§3.8): se rescatan del PDF a
+  `docs/fuente/imagenes/fig-N-M.png`, se muestran y se explican.
+- **Los diagramas se entregan como CÓDIGO Mermaid** (§3.9), NO renderizados a
+  imagen. El aprendiz los pega en un previsualizador. Deben **reproducir fielmente
+  las figuras del libro**.
 
 ## Estructura fija de cada lección (`lecciones/NN-nombre/`)
 
-1. Objetivo (1 concepto) · 2. Cita de la fuente · 3. El dolor/necesidad ·
-4. Explicación paso a paso · 5. Diagrama Mermaid + explicación · 6. Árbol de archivos ·
-7. Tu turno (huecos/ejercicio) · 8. Prueba pytest · 9. Preguntas de recuerdo.
+0. La pregunta (W→X) · 1. Objetivo · 2. Cita de la fuente · 3. El dolor/necesidad ·
+4. Explicación paso a paso (sin recortar) · 5. Figura del libro + diagrama Mermaid (código) ·
+6. Árbol de archivos · 7. Tu turno (huecos) · 8. Prueba pytest · 9. Preguntas de recuerdo.
 
+El avance se registra en `PROGRESO.md`.
 Fuente citable: `docs/fuente/Architecture-Patterns-with-Python.md`.
