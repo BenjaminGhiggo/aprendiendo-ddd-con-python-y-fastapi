@@ -1,7 +1,7 @@
 # Fase 0 — Python desde cero
 
 > No está en el libro: es el cimiento (regla 5) para poder leerlo. Micro-pasos.
-> Estado: 🟡 en ampliación — Python básico ✅ (00–08); ahora POO (09–12) y SOLID (13–17).
+> Estado: ✅ COMPLETA — Python básico (00–08) + POO (09–12) + SOLID (13–17).
 
 Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
@@ -49,8 +49,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
   - [x] Ejercicio (lsp.py) · [x] Recuerdo
 - [x] **16 — ISP** (Segregación de interfaces) — ✅ completa
   - [x] Ejercicio (isp.py) · [x] Recuerdo
-- [ ] **17 — DIP** (Inversión de dependencias) ⭐ clave para el libro
-  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [x] **17 — DIP** (Inversión de dependencias) ⭐ clave para el libro — ✅ completa
+  - [x] Ejercicio (dip.py) · [x] Recuerdo
 
 ## Bitácora de preguntas (§3.5)
 | Fecha | Lección | La pregunta (W → X) |

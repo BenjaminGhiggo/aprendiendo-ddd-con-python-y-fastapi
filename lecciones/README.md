@@ -28,6 +28,7 @@ carpeta, junto a su código `.py`. Puedes repasarla cuando quieras sin depender 
 | 14 | SOLID · OCP | [14-ocp](14-ocp/) | `repaso/leccion-14` |
 | 15 | SOLID · LSP | [15-lsp](15-lsp/) | `repaso/leccion-15` |
 | 16 | SOLID · ISP | [16-isp](16-isp/) | `repaso/leccion-16` |
+| 17 | SOLID · DIP ⭐ | [17-dip](17-dip/) | `repaso/leccion-17` |
 
 _(La lista crece a medida que avanzamos. El checklist completo está en [`../progreso/`](../progreso/).)_
 
