@@ -142,6 +142,22 @@ El reto (4.º) trae solo el enunciado: el aprendiz escribe su solución mala y s
 y se revisan juntos. Cada solución se guarda como `.py` ejecutable **verificado** y se
 explica en `ejercicios/ejercicios.md`.
 
+**Estructura de carpetas (ordenada):** cada ejercicio en su subcarpeta, y cada tipo
+de solución en la suya:
+
+```
+lecciones/NN-nombre/ejercicios/
+├── ejercicios.md
+├── ejercicio-1/
+│   ├── mala/solucion.py
+│   └── buena/solucion.py
+├── ejercicio-2/ …
+├── ejercicio-3/ …
+└── ejercicio-4-reto/
+    ├── mala/solucion.py   (plantilla para el aprendiz)
+    └── buena/solucion.py  (plantilla para el aprendiz)
+```
+
 ### 3.9 Los diagramas se entregan como código Mermaid
 
 - Los diagramas se dan **como bloque de código Mermaid** (el aprendiz lo pega en

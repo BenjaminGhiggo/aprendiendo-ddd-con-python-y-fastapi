@@ -4,7 +4,8 @@
 > lo que la mala hacía mal). Cita (regla 6): *"the best way to learn about code is to
 > code."* (Preface → Example Code and Coding Along).
 >
-> Cada solución está también como `.py` ejecutable en esta carpeta.
+> Cada ejercicio vive en su propia subcarpeta, y cada solución (mala/buena) en la
+> suya: `ejercicio-N/mala/solucion.py` y `ejercicio-N/buena/solucion.py`.
 
 ---
 
@@ -14,7 +15,7 @@
 2. Formato: `Calle: Siempre Viva 742` y `Ciudad: Lima`.
 3. Usa `print`.
 
-**Solución mala (funciona)** — [`ej1_mala.py`](ej1_mala.py):
+**Solución mala (funciona)** — [`ejercicio-1/mala/solucion.py`](ejercicio-1/mala/solucion.py):
 ```python
 print("Calle" + ":" + " " + "Siempre Viva 742")
 print("Ciudad" + ":" + " " + "Lima")
@@ -22,7 +23,7 @@ print("Ciudad" + ":" + " " + "Lima")
 🔴 **Qué hace mal:** parte un texto constante en muchos pedacitos y los pega con `+`.
 Es más largo, más difícil de leer y fácil de equivocarse con los espacios.
 
-**Solución buena** — [`ej1_buena.py`](ej1_buena.py):
+**Solución buena** — [`ejercicio-1/buena/solucion.py`](ejercicio-1/buena/solucion.py):
 ```python
 print("Calle: Siempre Viva 742")
 print("Ciudad: Lima")
@@ -36,14 +37,14 @@ concatenaciones inútiles.
 **Problema:**
 1. Muestra exactamente: `Ella gritó: "Alto!"` (con las comillas dobles incluidas).
 
-**Solución mala (funciona)** — [`ej2_mala.py`](ej2_mala.py):
+**Solución mala (funciona)** — [`ejercicio-2/mala/solucion.py`](ejercicio-2/mala/solucion.py):
 ```python
 print("Ella gritó: \"Alto!\"")
 ```
 🔴 **Qué hace mal:** usa comillas dobles por fuera y por dentro, así que tiene que
 "escapar" las de dentro con `\"`. Funciona, pero se lee feo y es fácil olvidar una barra.
 
-**Solución buena** — [`ej2_buena.py`](ej2_buena.py):
+**Solución buena** — [`ejercicio-2/buena/solucion.py`](ejercicio-2/buena/solucion.py):
 ```python
 print('Ella gritó: "Alto!"')
 ```
@@ -57,7 +58,7 @@ tal cual, sin escapes.
 1. El programa muestra `Calculando...`.
 2. Quieres dejar una nota recordatoria en el código, que **no** debe aparecer en pantalla.
 
-**Solución mala (funciona)** — [`ej3_mala.py`](ej3_mala.py):
+**Solución mala (funciona)** — [`ejercicio-3/mala/solucion.py`](ejercicio-3/mala/solucion.py):
 ```python
 print("Calculando...")
 print("# recordar revisar esto luego")
@@ -65,7 +66,7 @@ print("# recordar revisar esto luego")
 🔴 **Qué hace mal:** mete la nota dentro de un `print`, así que **se imprime** como si
 fuera salida del programa. El `#` ahí es solo texto, no un comentario.
 
-**Solución buena** — [`ej3_buena.py`](ej3_buena.py):
+**Solución buena** — [`ejercicio-3/buena/solucion.py`](ejercicio-3/buena/solucion.py):
 ```python
 print("Calculando...")
 # recordar revisar esto luego
@@ -77,7 +78,7 @@ ignora y **no** se muestra.
 
 ## Ejercicio 4 (opcional) — Reto para ti ✍️
 Resuélvelo tú: escribe una **solución mala (que funcione)** y una **buena**.
-Plantilla en [`ej4_reto.py`](ej4_reto.py).
+Plantillas en [`ejercicio-4-reto/mala/solucion.py`](ejercicio-4-reto/mala/solucion.py) y [`ejercicio-4-reto/buena/solucion.py`](ejercicio-4-reto/buena/solucion.py).
 
 **Problema:**
 1. Muestra una mini factura en **dos líneas**.
