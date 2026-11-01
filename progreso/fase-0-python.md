@@ -31,8 +31,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
 - [x] **09 — Encapsulación** (proteger el estado del objeto) — ✅ completa
   - [x] Ejercicio (encapsulacion.py) · [x] Recuerdo
-- [ ] **10 — Herencia** (reutilizar/extender una clase)
-  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [x] **10 — Herencia** (reutilizar/extender una clase) — ✅ completa
+  - [x] Ejercicio (herencia.py) · [x] Recuerdo
 - [ ] **11 — Polimorfismo** (misma interfaz, distintos comportamientos)
   - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
 - [ ] **12 — Abstracción** (clases abstractas, `ABC`)
