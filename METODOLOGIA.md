@@ -210,7 +210,9 @@ Todo lo que hagamos y aprendamos se registra con **Git**: ramas y commits.
 
 **Fase 0 — Python desde cero** (regla 5): ejecutar código, variables, tipos,
 condicionales, bucles, funciones, estructuras de datos, clases/objetos,
-excepciones, módulos, entorno con `uv`, y primer `pytest`.
+excepciones, módulos, entorno con `uv`, y primer `pytest` (lecciones 00–08);
+**POO a fondo** (encapsulación, herencia, polimorfismo, abstracción; 09–12) y
+**SOLID** (SRP, OCP, LSP, ISP, DIP; 13–17, con foco en SRP y DIP, que usa el libro).
 
 **Fase 1 — Arquitectura (Cosmic Python):**
 

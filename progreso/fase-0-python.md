@@ -1,7 +1,7 @@
 # Fase 0 — Python desde cero
 
 > No está en el libro: es el cimiento (regla 5) para poder leerlo. Micro-pasos.
-> Estado: ✅ COMPLETA (lecciones 00–08)
+> Estado: 🟡 en ampliación — Python básico ✅ (00–08); ahora POO (09–12) y SOLID (13–17).
 
 Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
@@ -25,6 +25,32 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
   - [x] Ejercicio (excepciones.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [x] **08 — Módulos, entorno con `uv` y primer `pytest`** — ✅ completa
   - [x] Ejercicio (tienda.py) · [x] pytest (2 passed) · [x] Recuerdo
+
+## Programación Orientada a Objetos (POO) — a fondo
+> Continúa desde la Lección 06 (Clases y objetos). Base del modelo de dominio del libro.
+
+- [ ] **09 — Encapsulación** (proteger el estado del objeto)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **10 — Herencia** (reutilizar/extender una clase)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **11 — Polimorfismo** (misma interfaz, distintos comportamientos)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **12 — Abstracción** (clases abstractas, `ABC`)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+
+## SOLID — los 5 principios (foco en SRP y DIP, los que usa el libro)
+> La Introducción del libro trata Encapsulation/Abstractions, Layering y el DIP.
+
+- [ ] **13 — SRP** (Responsabilidad única)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **14 — OCP** (Abierto/Cerrado)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **15 — LSP** (Sustitución de Liskov)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **16 — ISP** (Segregación de interfaces)
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [ ] **17 — DIP** (Inversión de dependencias) ⭐ clave para el libro
+  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
 
 ## Bitácora de preguntas (§3.5)
 | Fecha | Lección | La pregunta (W → X) |
