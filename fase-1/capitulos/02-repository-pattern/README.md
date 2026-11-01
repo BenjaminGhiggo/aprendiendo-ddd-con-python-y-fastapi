@@ -67,3 +67,59 @@ uv run pytest fase-1/capitulos/02-repository-pattern/proyecto/ -q      # 15 pass
 1. ¿Qué dos métodos tiene el Repository y por qué solo esos?
 2. ¿Qué acoplamiento evita?
 3. ¿Para qué sirve el `RepositorioFalso`?
+
+---
+
+## Micro-paso 2 — El ORM (persistir sin ensuciar el modelo)
+
+### 0. 🧭 La pregunta
+> *"Quiero guardar el `Lote` en una base de datos real, pero sin que el modelo importe
+> SQLAlchemy ni se llene de SQL."*
+
+### 1. Objetivo
+Mapear el modelo a tablas con **mapeo imperativo**, manteniendo `modelo.py` sin imports de ORM.
+
+### 2. Cita de la fuente
+> *"The ORM imports ... the domain model, and not the other way around. ... if we never
+> call start_mappers, our domain model classes stay blissfully unaware of the database."* — Cap. 2.
+
+### 3. El dolor / necesidad
+Si el modelo importa el ORM, queda acoplado a la base de datos. Invertimos: el ORM conoce al modelo.
+
+### 4. Explicación paso a paso
+1. Adaptación: `LineaPedido` de `frozen=True` a `unsafe_hash=True` (igualdad por valor + hash,
+   pero el ORM puede escribir). El repo real del libro usa `unsafe_hash`.
+2. `orm.py`: tablas (`lineas_pedido`, `lotes`, `asignaciones`) e `iniciar_mapeos()` con
+   `map_imperatively` (SQLAlchemy 2.x; el libro usaba `mapper()`, eliminado en 2.x).
+   `_asignaciones` se mapea como `relationship` con tabla intermedia.
+3. `conftest.py`: sesión SQLite en memoria.
+4. `test_orm.py`: round-trip de una línea y de un lote con asignación. Verde (17 passed).
+
+### 5. Diagrama (Mermaid)
+```mermaid
+flowchart LR
+    ORM["orm.py (esquema + mapeo)"] -->|"importa / conoce"| M["modelo.py (dominio puro)"]
+    ORM --> DB["Base de datos (SQLite)"]
+    M -. "NO importa SQLAlchemy" .-> ORM
+```
+La dependencia está invertida: el detalle (ORM) depende del dominio.
+
+### 6. Árbol de archivos
+```
+fase-1/capitulos/02-repository-pattern/proyecto/
+├── modelo.py · orm.py · conftest.py · repositorio.py
+└── test_modelo.py · test_repositorio.py · test_orm.py
+```
+
+### 7. Tu turno
+Guardar dos líneas distintas y comprobar que `query(LineaPedido).all()` trae ambas.
+
+### 8. Comprobación
+```bash
+uv run pytest fase-1/capitulos/02-repository-pattern/proyecto/ -q      # 17 passed
+```
+
+### 9. Preguntas de recuerdo
+1. ¿Quién importa a quién: el ORM al modelo o al revés? ¿Por qué?
+2. ¿Por qué `LineaPedido` tuvo que dejar de ser `frozen`?
+3. ¿Qué pasa con el dominio si nunca llamas `iniciar_mapeos()`?

@@ -8,10 +8,10 @@
 ## Secciones (índice)
 - [ ] 2.a Persisting Our Domain Model
 - [ ] 2.b Some Pseudocode: What Are We Going to Need?
-- [ ] 2.c Applying the DIP to Data Access
-- [ ] 2.d Reminder: Our Model
-  - [ ] The "Normal" ORM Way: Model Depends on ORM
-  - [ ] Inverting the Dependency: ORM Depends on Model
+- [x] 2.c Applying the DIP to Data Access
+- [x] 2.d Reminder: Our Model
+  - [x] The "Normal" ORM Way: Model Depends on ORM
+  - [x] Inverting the Dependency: ORM Depends on Model
 - [x] 2.e Introducing the Repository Pattern
   - [x] The Repository in the Abstract
   - [ ] What Is the Trade-Off?

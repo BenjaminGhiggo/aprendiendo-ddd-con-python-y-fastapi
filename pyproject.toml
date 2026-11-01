@@ -2,7 +2,9 @@
 name = "aprendiendo-ddd-con-python-y-fastapi"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
-dependencies = []
+dependencies = [
+    "sqlalchemy>=2.1.6",
+]
 
 [dependency-groups]
 dev = [

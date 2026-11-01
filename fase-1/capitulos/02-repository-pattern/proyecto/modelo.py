@@ -12,7 +12,7 @@ class SinStock(Exception):
     pass
 
 
-@dataclass(frozen=True)
+@dataclass(unsafe_hash=True)
 class LineaPedido:
     id_pedido: str
     sku: str
