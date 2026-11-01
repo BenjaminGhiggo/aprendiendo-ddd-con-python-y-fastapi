@@ -123,3 +123,62 @@ uv run pytest fase-1/capitulos/02-repository-pattern/proyecto/ -q      # 17 pass
 1. ¿Quién importa a quién: el ORM al modelo o al revés? ¿Por qué?
 2. ¿Por qué `LineaPedido` tuvo que dejar de ser `frozen`?
 3. ¿Qué pasa con el dominio si nunca llamas `iniciar_mapeos()`?
+
+---
+
+## Micro-paso 3 — El repositorio SQL (adaptador) + Puerto/Adaptador
+
+### 0. 🧭 La pregunta
+> *"Ya tengo el contrato y el fake. Me piden el repositorio de verdad que hable con la
+> base de datos, sin tocar el dominio."*
+
+### 1. Objetivo
+Implementar `RepositorioSQLAlchemy` (adaptador real) y entender puerto vs. adaptador.
+
+### 2. Cita de la fuente
+> *"class SqlAlchemyRepository(AbstractRepository): ... def add(self, batch):
+> self.session.add(batch); def get(self, reference): return
+> self.session.query(model.Batch).filter_by(reference=reference).one()"* — Cap. 2.
+
+### 3. El dolor / necesidad
+El fake no persiste nada; producción necesita un adaptador real que cumpla el mismo contrato.
+
+### 4. Explicación paso a paso
+1. `RepositorioSQLAlchemy`: `agregar` → `sesion.add`; `obtener` → `query(Lote).filter_by(referencia=...).one()`.
+2. Tests de integración con SQLite real (guardar/leer). Verde: 19 passed.
+3. Puerto (`RepositorioAbstracto`) y adaptadores (`RepositorioFalso`, `RepositorioSQLAlchemy`).
+
+### 5. Diagrama (Mermaid — Figura 2-5)
+```mermaid
+classDiagram
+    class RepositorioAbstracto {
+      <<puerto>>
+      agregar(lote)
+      obtener(ref)
+    }
+    RepositorioAbstracto <|-- RepositorioFalso
+    RepositorioAbstracto <|-- RepositorioSQLAlchemy
+```
+Un puerto y dos adaptadores intercambiables (LSP, Lección 15).
+
+### 6. Árbol de archivos
+```
+fase-1/capitulos/02-repository-pattern/proyecto/
+├── modelo.py · orm.py · conftest.py · repositorio.py
+└── test_modelo.py · test_repositorio.py · test_orm.py
+```
+
+### 8. Comprobación
+```bash
+uv run pytest fase-1/capitulos/02-repository-pattern/proyecto/ -q      # 19 passed
+```
+
+### 9. Preguntas de recuerdo
+1. ¿Qué es el "puerto" y qué son los "adaptadores" en el Repository?
+2. ¿Por qué el fake y el SQL son intercambiables?
+3. ¿Qué método de SQLAlchemy usa `obtener` para traer un lote por su referencia?
+
+---
+
+> **Capítulo 2 completo.** Repository (puerto + fake + SQL), ORM imperativo (modelo sin
+> imports de ORM). Siguiente: **Capítulo 3 — Coupling and Abstractions**.

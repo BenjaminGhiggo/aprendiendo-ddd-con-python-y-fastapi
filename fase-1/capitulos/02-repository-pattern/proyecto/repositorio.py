@@ -29,3 +29,18 @@ class RepositorioFalso(RepositorioAbstracto):
 
     def listar(self):
         return list(self._lotes)
+
+
+class RepositorioSQLAlchemy(RepositorioAbstracto):
+    # Adaptador REAL: envuelve una sesión de SQLAlchemy.
+    def __init__(self, sesion):
+        self.sesion = sesion
+
+    def agregar(self, lote):
+        self.sesion.add(lote)
+
+    def obtener(self, referencia):
+        return self.sesion.query(Lote).filter_by(referencia=referencia).one()
+
+    def listar(self):
+        return self.sesion.query(Lote).all()

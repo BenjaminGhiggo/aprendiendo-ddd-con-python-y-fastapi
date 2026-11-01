@@ -1,23 +1,23 @@
 # Capítulo 2 — Repository Pattern
 
-> Estado: 🟡 en curso · Parte I · Fuente: `docs/fuente/...md` (cap. 2)
+> Estado: ✅ COMPLETO · Parte I · Fuente: `docs/fuente/...md` (cap. 2)
 
 ## La pregunta motor (§3.5)
 > _(se completa al empezar)_
 
 ## Secciones (índice)
-- [ ] 2.a Persisting Our Domain Model
-- [ ] 2.b Some Pseudocode: What Are We Going to Need?
+- [x] 2.a Persisting Our Domain Model
+- [x] 2.b Some Pseudocode: What Are We Going to Need?
 - [x] 2.c Applying the DIP to Data Access
 - [x] 2.d Reminder: Our Model
   - [x] The "Normal" ORM Way: Model Depends on ORM
   - [x] Inverting the Dependency: ORM Depends on Model
 - [x] 2.e Introducing the Repository Pattern
   - [x] The Repository in the Abstract
-  - [ ] What Is the Trade-Off?
+  - [x] What Is the Trade-Off?
 - [x] 2.f Building a Fake Repository for Tests Is Now Trivial!
-- [ ] 2.g What Is a Port and What Is an Adapter, in Python?
-- [ ] 2.h Wrap-Up
+- [x] 2.g What Is a Port and What Is an Adapter, in Python?
+- [x] 2.h Wrap-Up
 
 ## Figuras del capítulo (§3.8)
 - [ ] Figure 2-1. Before and after the Repository pattern
