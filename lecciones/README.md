@@ -11,6 +11,7 @@ carpeta, junto a su código `.py`. Puedes repasarla cuando quieras sin depender 
 | 01 | Variables y tipos | [01-variables-y-tipos](01-variables-y-tipos/) | `repaso/leccion-01` |
 | 02 | Condicionales (if/else) | [02-condicionales](02-condicionales/) | `repaso/leccion-02` |
 | 03 | Bucles (for/while) | [03-bucles](03-bucles/) | `repaso/leccion-03` |
+| 04 | Funciones | [04-funciones](04-funciones/) | `repaso/leccion-04` |
 
 _(La lista crece a medida que avanzamos. El checklist completo está en [`../progreso/`](../progreso/).)_
 
