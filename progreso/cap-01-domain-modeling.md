@@ -1,6 +1,6 @@
 # Capítulo 1 — Domain Modeling
 
-> Estado: ⬜ pendiente · Parte I · Fuente: `docs/fuente/...md` (cap. 1)
+> Estado: ✅ COMPLETO · Parte I · Fuente: `docs/fuente/...md` (cap. 1)
 
 ## La pregunta motor (§3.5)
 > _(se completa al empezar)_
@@ -11,9 +11,9 @@
 - [x] 1.c Unit Testing Domain Models (primer test ✅)
   - [x] Dataclasses Are Great for Value Objects
   - [x] Value Objects and Entities
-- [ ] 1.d Not Everything Has to Be an Object: A Domain Service Function
-  - [ ] Python's Magic Methods Let Us Use Our Models with Idiomatic Python
-  - [ ] Exceptions Can Express Domain Concepts Too
+- [x] 1.d Not Everything Has to Be an Object: A Domain Service Function
+  - [x] Python's Magic Methods Let Us Use Our Models with Idiomatic Python
+  - [x] Exceptions Can Express Domain Concepts Too
 
 ## Figuras del capítulo (§3.8)
 - [x] Figure 1-3. Our model in UML  _(rescatada: `docs/fuente/imagenes/fig-1-3.png`)_

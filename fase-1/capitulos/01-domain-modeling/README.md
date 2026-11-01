@@ -200,3 +200,66 @@ uv run pytest fase-1/proyecto/ -q      # 9 passed
 1. ¿Por qué `cantidad_disponible` es propiedad calculada?
 2. ¿Por qué asignar dos veces la misma línea no descuenta doble?
 3. ¿Qué comprueba `puede_asignar`?
+
+---
+
+## Micro-paso 4 — Servicio de dominio `asignar` + excepción `SinStock`
+
+### 0. 🧭 La pregunta
+> *"Asignar una línea contra el conjunto de lotes, eligiendo bien (almacén primero,
+> luego el que llega antes). ¿Y si ningún lote puede? Eso es estar 'sin stock'."*
+
+### 1. Objetivo
+Un servicio de dominio `asignar` (función), ordenar lotes con `__gt__`, y la excepción `SinStock`.
+
+### 2. Cita de la fuente
+> *"just make it a function."* / *"batch = next(b for b in sorted(batches) if b.can_allocate(line))"*
+> / *"class OutOfStock(Exception): pass ... raise OutOfStock(...)"* — Cap. 1.
+
+### 3. El dolor / necesidad
+Elegir entre varios lotes no es de un solo lote (función); hay que ordenarlos (`__gt__`);
+y "no hay stock" merece una excepción con nombre del negocio.
+
+### 4. Explicación paso a paso (TDD)
+1. 4 tests del libro (prefiere almacén, prefiere temprano, devuelve referencia, SinStock) → rojo.
+2. Implemento:
+   - `__gt__`: lote sin eta va primero; si ambos tienen eta, el más temprano.
+   - `class SinStock(Exception)`.
+   - `asignar(linea, lotes)`: `next(l for l in sorted(lotes) if l.puede_asignar(linea))`,
+     asigna y devuelve referencia; `StopIteration` → `SinStock`.
+3. Verde: 13 passed.
+
+### 5. Diagrama (Mermaid — reproduce la Figura 1-4)
+```mermaid
+flowchart TD
+    L["LineaPedido (sku, cantidad)"] --> F["asignar(linea, lotes)"]
+    F --> S["sorted(lotes) por __gt__<br/>(almacén primero, luego eta más temprana)"]
+    S --> N{"¿algún lote puede_asignar?"}
+    N -- "Sí" --> A["lote.asignar(linea)<br/>→ devuelve lote.referencia"]
+    N -- "No" --> X["raise SinStock"]
+```
+
+### 6. Árbol de archivos
+```
+fase-1/proyecto/
+├── modelo.py          # + __gt__, SinStock, función asignar()
+└── test_modelo.py     # 13 tests
+```
+
+### 7. Tu turno
+Test: asignar la misma línea a dos lotes solo la asigna a uno.
+
+### 8. Comprobación
+```bash
+uv run pytest fase-1/proyecto/ -q      # 13 passed
+```
+
+### 9. Preguntas de recuerdo
+1. ¿Por qué `asignar` es función y no método?
+2. ¿Qué hace `__gt__` al usar `sorted(lotes)`?
+3. ¿Por qué traducir `StopIteration` a `SinStock`?
+
+---
+
+> **Capítulo 1 completo.** El modelo de dominio (LineaPedido, Lote, asignar, SinStock)
+> está construido con TDD, sin base de datos ni web. Siguiente: **Capítulo 2 — Repository Pattern**.

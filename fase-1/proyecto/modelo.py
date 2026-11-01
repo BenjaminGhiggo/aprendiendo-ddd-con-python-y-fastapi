@@ -5,7 +5,11 @@
 #   - asignar (allocate): reservar una línea de pedido contra un lote.
 from dataclasses import dataclass
 from datetime import date
-from typing import Optional
+from typing import List, Optional
+
+
+class SinStock(Exception):
+    pass
 
 
 @dataclass(frozen=True)
@@ -54,3 +58,24 @@ class Lote:
     # Para una entidad, se basa en su identidad (la referencia).
     def __hash__(self):
         return hash(self.referencia)
+
+    # __gt__ define el operador > y permite ordenar lotes con sorted().
+    # Un lote SIN eta (ya está en almacén) va "primero" (es menor); entre lotes con
+    # eta, va primero el de fecha más temprana.
+    def __gt__(self, other):
+        if self.eta is None:
+            return False
+        if other.eta is None:
+            return True
+        return self.eta > other.eta
+
+
+def asignar(linea: LineaPedido, lotes: List[Lote]) -> str:
+    # Servicio de dominio: NO es un método de ninguna clase; es una función.
+    # Elige el primer lote (ya ordenados) que pueda asignar la línea.
+    try:
+        lote = next(l for l in sorted(lotes) if l.puede_asignar(linea))
+        lote.asignar(linea)
+        return lote.referencia
+    except StopIteration:
+        raise SinStock(f"Sin stock para el sku {linea.sku}")
