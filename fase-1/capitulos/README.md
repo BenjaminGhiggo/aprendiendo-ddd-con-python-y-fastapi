@@ -16,5 +16,5 @@ capítulo (ver metodología §3.9b y §6.1).
 | 07 | Aggregates | _(pendiente)_ | ⬜ |
 | 08–13 | Event-Driven Architecture | _(pendiente)_ | ⬜ |
 
-- El código se corre con `uv run pytest proyecto/ -q`.
+- El código se corre con `uv run pytest fase-1/proyecto/ -q`.
 - El avance detallado por secciones está en [`../progreso/`](../progreso/).

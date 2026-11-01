@@ -10,7 +10,7 @@ capítulo a capítulo con **TDD**.
 
 ## Correr las pruebas
 ```bash
-uv run pytest proyecto/ -q
+uv run pytest fase-1/proyecto/ -q
 ```
 
 ## Glosario del dominio (lenguaje del negocio)

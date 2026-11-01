@@ -179,10 +179,12 @@ línea qué cambió.
 **Dónde vive cada cosa (orden del repo):**
 
 - **Fase 0 (Python/POO/SOLID):** cada lección autocontenida en `lecciones/NN-nombre/`.
-- **Fase 1 (el libro):** la **enseñanza** de cada capítulo en `capitulos/NN-nombre/`
-  (ordenado como `lecciones/`, con el número al inicio), y el **código único que
-  crece** en `proyecto/` (no se duplica por capítulo). El código se corre con
-  `uv run pytest proyecto/ -q`.
+- **Fase 1 (el libro):** todo bajo `fase-1/`, para dejar clara la relación entre la
+  clase y el código:
+  - `fase-1/capitulos/NN-nombre/` — la **enseñanza** de cada capítulo (ordenado como
+    `lecciones/`, con el número al inicio).
+  - `fase-1/proyecto/` — el **código único que crece** (no se duplica por capítulo).
+    Se corre con `uv run pytest fase-1/proyecto/ -q`.
 
 ### 3.9 Los diagramas se entregan como código Mermaid
 

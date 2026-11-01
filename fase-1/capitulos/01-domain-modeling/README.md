@@ -74,7 +74,7 @@ Asignar dos líneas distintas al mismo lote y verificar que la cantidad baja las
 
 ### 8. Comprobación
 ```bash
-uv run pytest proyecto/ -q      # 1 passed
+uv run pytest fase-1/proyecto/ -q      # 1 passed
 ```
 
 ### 9. Preguntas de recuerdo
