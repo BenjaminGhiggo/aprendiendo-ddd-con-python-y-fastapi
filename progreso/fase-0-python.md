@@ -42,7 +42,7 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 > La Introducción del libro trata Encapsulation/Abstractions, Layering y el DIP.
 
 - [x] **13 — SRP** (Responsabilidad única) — ✅ completa
-  - [x] Ejercicio (srp.py) · [x] Recuerdo
+  - [x] Ejercicio (srp.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto)
 - [x] **14 — OCP** (Abierto/Cerrado) — ✅ completa
   - [x] Ejercicio (ocp.py) · [x] Recuerdo
 - [x] **15 — LSP** (Sustitución de Liskov) — ✅ completa
