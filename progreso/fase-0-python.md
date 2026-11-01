@@ -41,8 +41,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 ## SOLID — los 5 principios (foco en SRP y DIP, los que usa el libro)
 > La Introducción del libro trata Encapsulation/Abstractions, Layering y el DIP.
 
-- [ ] **13 — SRP** (Responsabilidad única)
-  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [x] **13 — SRP** (Responsabilidad única) — ✅ completa
+  - [x] Ejercicio (srp.py) · [x] Recuerdo
 - [ ] **14 — OCP** (Abierto/Cerrado)
   - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
 - [ ] **15 — LSP** (Sustitución de Liskov)

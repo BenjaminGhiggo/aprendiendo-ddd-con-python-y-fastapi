@@ -24,6 +24,7 @@ carpeta, junto a su código `.py`. Puedes repasarla cuando quieras sin depender 
 | 10 | Herencia | [10-herencia](10-herencia/) | `repaso/leccion-10` |
 | 11 | Polimorfismo | [11-polimorfismo](11-polimorfismo/) | `repaso/leccion-11` |
 | 12 | Abstracción (ABC) | [12-abstraccion](12-abstraccion/) | `repaso/leccion-12` |
+| 13 | SOLID · SRP | [13-srp](13-srp/) | `repaso/leccion-13` |
 
 _(La lista crece a medida que avanzamos. El checklist completo está en [`../progreso/`](../progreso/).)_
 
