@@ -148,16 +148,19 @@ No hay un `ejercicios.md` único.
 ```
 lecciones/NN-nombre/ejercicios/
 ├── ejercicio-1/
-│   ├── README.md          (enunciado + mala/buena de ESTE ejercicio)
-│   ├── mala/solucion.py
-│   └── buena/solucion.py
+│   ├── README.md               (enunciado + mala/buena de ESTE ejercicio)
+│   ├── solucion_mala/main.py
+│   └── solucion_buena/main.py
 ├── ejercicio-2/ …
 ├── ejercicio-3/ …
 └── ejercicio-4-reto/
     ├── README.md
-    ├── mala/solucion.py   (plantilla para el aprendiz)
-    └── buena/solucion.py  (plantilla para el aprendiz)
+    ├── solucion_mala/main.py   (plantilla para el aprendiz)
+    └── solucion_buena/main.py  (plantilla para el aprendiz)
 ```
+
+Nombres explícitos (`solucion_mala` / `solucion_buena`) y punto de entrada estándar
+`main.py` en cada una, para que la estructura escale con orden.
 
 ### 3.9 Los diagramas se entregan como código Mermaid
 
