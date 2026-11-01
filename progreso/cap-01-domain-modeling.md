@@ -6,9 +6,9 @@
 > _(se completa al empezar)_
 
 ## Secciones (índice)
-- [ ] 1.a What Is a Domain Model?
-- [ ] 1.b Exploring the Domain Language
-- [ ] 1.c Unit Testing Domain Models
+- [x] 1.a What Is a Domain Model?
+- [x] 1.b Exploring the Domain Language
+- [x] 1.c Unit Testing Domain Models (primer test ✅)
   - [ ] Dataclasses Are Great for Value Objects
   - [ ] Value Objects and Entities
 - [ ] 1.d Not Everything Has to Be an Object: A Domain Service Function
