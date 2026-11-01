@@ -43,8 +43,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
 - [x] **13 — SRP** (Responsabilidad única) — ✅ completa
   - [x] Ejercicio (srp.py) · [x] Recuerdo
-- [ ] **14 — OCP** (Abierto/Cerrado)
-  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [x] **14 — OCP** (Abierto/Cerrado) — ✅ completa
+  - [x] Ejercicio (ocp.py) · [x] Recuerdo
 - [ ] **15 — LSP** (Sustitución de Liskov)
   - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
 - [ ] **16 — ISP** (Segregación de interfaces)
