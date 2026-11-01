@@ -1,7 +1,7 @@
 # Fase 0 — Python desde cero
 
 > No está en el libro: es el cimiento (regla 5) para poder leerlo. Micro-pasos.
-> Estado: 🟡 en curso (Lección 00)
+> Estado: ✅ COMPLETA (lecciones 00–08)
 
 Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 
@@ -23,8 +23,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
   - [x] Ejercicio (clases.py) · [x] Recuerdo · [x] Figura 1-3 · _(pytest desde la lección 08)_
 - [x] **07 — Excepciones** — ✅ completa
   - [x] Ejercicio (excepciones.py) · [x] Recuerdo · _(pytest desde la lección 08)_
-- [ ] **08 — Módulos, entorno con `uv` y primer `pytest`**
-  - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
+- [x] **08 — Módulos, entorno con `uv` y primer `pytest`** — ✅ completa
+  - [x] Ejercicio (tienda.py) · [x] pytest (2 passed) · [x] Recuerdo
 
 ## Bitácora de preguntas (§3.5)
 | Fecha | Lección | La pregunta (W → X) |

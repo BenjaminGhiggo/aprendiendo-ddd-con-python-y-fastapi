@@ -15,6 +15,7 @@ carpeta, junto a su código `.py`. Puedes repasarla cuando quieras sin depender 
 | 05 | Listas y diccionarios | [05-listas-y-diccionarios](05-listas-y-diccionarios/) | `repaso/leccion-05` |
 | 06 | Clases y objetos | [06-clases-y-objetos](06-clases-y-objetos/) | `repaso/leccion-06` |
 | 07 | Excepciones | [07-excepciones](07-excepciones/) | `repaso/leccion-07` |
+| 08 | Módulos, entorno con uv y primer pytest | [08-modulos-y-pytest](08-modulos-y-pytest/) | `repaso/leccion-08` |
 
 _(La lista crece a medida que avanzamos. El checklist completo está en [`../progreso/`](../progreso/).)_
 
