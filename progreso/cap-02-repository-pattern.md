@@ -1,6 +1,6 @@
 # Capítulo 2 — Repository Pattern
 
-> Estado: ⬜ pendiente · Parte I · Fuente: `docs/fuente/...md` (cap. 2)
+> Estado: 🟡 en curso · Parte I · Fuente: `docs/fuente/...md` (cap. 2)
 
 ## La pregunta motor (§3.5)
 > _(se completa al empezar)_
@@ -12,10 +12,10 @@
 - [ ] 2.d Reminder: Our Model
   - [ ] The "Normal" ORM Way: Model Depends on ORM
   - [ ] Inverting the Dependency: ORM Depends on Model
-- [ ] 2.e Introducing the Repository Pattern
-  - [ ] The Repository in the Abstract
+- [x] 2.e Introducing the Repository Pattern
+  - [x] The Repository in the Abstract
   - [ ] What Is the Trade-Off?
-- [ ] 2.f Building a Fake Repository for Tests Is Now Trivial!
+- [x] 2.f Building a Fake Repository for Tests Is Now Trivial!
 - [ ] 2.g What Is a Port and What Is an Adapter, in Python?
 - [ ] 2.h Wrap-Up
 

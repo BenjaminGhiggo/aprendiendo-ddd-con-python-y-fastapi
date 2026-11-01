@@ -11,7 +11,7 @@ hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpet
 | # | Capítulo | Carpeta | Estado |
 |---|----------|---------|--------|
 | 01 | Domain Modeling | [01-domain-modeling](01-domain-modeling/) | ✅ completo |
-| 02 | Repository Pattern | _(pendiente)_ | ⬜ |
+| 02 | Repository Pattern | [02-repository-pattern](02-repository-pattern/) | 🟡 en curso |
 | 03 | Coupling and Abstractions | _(pendiente)_ | ⬜ |
 | 04 | Service Layer + API (FastAPI) | _(pendiente)_ | ⬜ |
 | 05 | TDD High/Low Gear | _(pendiente)_ | ⬜ |
