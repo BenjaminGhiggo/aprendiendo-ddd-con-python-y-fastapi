@@ -9,8 +9,8 @@
 - [x] 1.a What Is a Domain Model?
 - [x] 1.b Exploring the Domain Language
 - [x] 1.c Unit Testing Domain Models (primer test ✅)
-  - [ ] Dataclasses Are Great for Value Objects
-  - [ ] Value Objects and Entities
+  - [x] Dataclasses Are Great for Value Objects
+  - [x] Value Objects and Entities
 - [ ] 1.d Not Everything Has to Be an Object: A Domain Service Function
   - [ ] Python's Magic Methods Let Us Use Our Models with Idiomatic Python
   - [ ] Exceptions Can Express Domain Concepts Too

@@ -24,3 +24,15 @@ class Lote:
 
     def asignar(self, linea: LineaPedido):
         self.cantidad_disponible -= linea.cantidad
+
+    # Igualdad por IDENTIDAD: dos lotes son "el mismo" si tienen la misma referencia,
+    # sin importar que cambie el resto de sus datos.
+    def __eq__(self, other):
+        if not isinstance(other, Lote):
+            return False
+        return other.referencia == self.referencia
+
+    # __hash__ controla cómo se comporta el objeto en sets y como clave de dict.
+    # Para una entidad, se basa en su identidad (la referencia).
+    def __hash__(self):
+        return hash(self.referencia)

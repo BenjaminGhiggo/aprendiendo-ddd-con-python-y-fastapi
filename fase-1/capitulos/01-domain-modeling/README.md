@@ -81,3 +81,63 @@ uv run pytest fase-1/proyecto/ -q      # 1 passed
 1. ¿Diferencia entre `LineaPedido` (value object) y `Lote` (entidad)?
 2. ¿Qué es el ciclo rojo → verde de TDD?
 3. ¿Por qué los nombres vienen del lenguaje del negocio?
+
+---
+
+## Micro-paso 2 — Value objects vs. entidades (igualdad)
+
+### 0. 🧭 La pregunta
+> *"¿Dos `LineaPedido` con los mismos datos son 'la misma'? ¿Y dos lotes con la misma
+> referencia pero distinto stock?"*
+
+### 1. Objetivo
+Distinguir igualdad por **valor** (value object) e igualdad por **identidad** (entidad).
+
+### 2. Cita de la fuente
+> *"A value object is any domain object that is uniquely identified by the data it holds."*
+> *"We use the term entity to describe a domain object that has long-lived identity...
+> still recognizably the same thing. Batches... are entities."* — Cap. 1.
+
+### 3. El dolor / necesidad
+Por defecto Python compara por objeto en memoria; el negocio compara líneas por sus
+datos y lotes por su referencia.
+
+### 4. Explicación paso a paso (TDD)
+1. El test de igualdad de `LineaPedido` pasa gratis (`@dataclass(frozen=True)`).
+2. El test de igualdad de `Lote` falla (🔴): Python no sabe que la referencia manda.
+3. Implemento en `Lote`:
+   - `__eq__` compara solo `referencia`.
+   - `__hash__` se basa en `referencia` (para sets/dicts).
+4. Verde (🟢): 3 passed.
+
+### 5. Diagrama (Mermaid)
+```mermaid
+flowchart TB
+    subgraph VO["LineaPedido · value object"]
+      A["('pedido-1','MESA',2)"] -- "== (por VALOR)" --> B["('pedido-1','MESA',2)"]
+    end
+    subgraph EN["Lote · entidad"]
+      C["ref=lote-001<br/>MESA, 20"] -- "== (por REFERENCIA)" --> D["ref=lote-001<br/>SILLA, 5"]
+    end
+```
+Value object: iguales si todos los datos coinciden. Entidad: iguales si comparten referencia.
+
+### 6. Árbol de archivos
+```
+fase-1/proyecto/
+├── modelo.py          # Lote con __eq__ y __hash__
+└── test_modelo.py     # + tests de igualdad
+```
+
+### 7. Tu turno
+Comprobar que dos lotes con referencias distintas NO son iguales.
+
+### 8. Comprobación
+```bash
+uv run pytest fase-1/proyecto/ -q      # 3 passed
+```
+
+### 9. Preguntas de recuerdo
+1. ¿Por qué `LineaPedido` compara por valor sin código extra?
+2. ¿Qué compara el `__eq__` de `Lote`?
+3. ¿Un lote sigue siendo el mismo si cambia su stock? ¿Por qué?
