@@ -20,7 +20,7 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 - [x] **05 — Listas y diccionarios** — ✅ completa
   - [x] Ejercicio (colecciones.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto) · _(pytest desde la lección 08)_
 - [x] **06 — Clases y objetos** (clase→instancia→objeto→uso, §3.6) — ✅ completa
-  - [x] Ejercicio (clases.py) · [x] Recuerdo · [x] Figura 1-3 · _(pytest desde la lección 08)_
+  - [x] Ejercicio (clases.py) · [x] Recuerdo · [x] Figura 1-3 · [x] Ejercicios de refuerzo (3 + reto) · _(pytest desde la lección 08)_
 - [x] **07 — Excepciones** — ✅ completa
   - [x] Ejercicio (excepciones.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [x] **08 — Módulos, entorno con `uv` y primer `pytest`** — ✅ completa
