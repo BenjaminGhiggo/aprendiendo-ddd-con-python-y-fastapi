@@ -139,21 +139,22 @@ Cada lección incluye una carpeta `ejercicios/` con **3 ejercicios resueltos** m
 3. **Solución buena** — corregida, **resaltando qué hacía mal la anterior**.
 
 El reto (4.º) trae solo el enunciado: el aprendiz escribe su solución mala y su buena,
-y se revisan juntos. Cada solución se guarda como `.py` ejecutable **verificado** y se
-explica en `ejercicios/ejercicios.md`.
+y se revisan juntos. Cada solución se guarda como `.py` ejecutable **verificado**.
 
-**Estructura de carpetas (ordenada):** cada ejercicio en su subcarpeta, y cada tipo
-de solución en la suya:
+**Estructura de carpetas (dividida, no aglomerada):** cada ejercicio tiene **su propio
+`README.md`** (enunciado + mala/buena), y cada tipo de solución va en su subcarpeta.
+No hay un `ejercicios.md` único.
 
 ```
 lecciones/NN-nombre/ejercicios/
-├── ejercicios.md
 ├── ejercicio-1/
+│   ├── README.md          (enunciado + mala/buena de ESTE ejercicio)
 │   ├── mala/solucion.py
 │   └── buena/solucion.py
 ├── ejercicio-2/ …
 ├── ejercicio-3/ …
 └── ejercicio-4-reto/
+    ├── README.md
     ├── mala/solucion.py   (plantilla para el aprendiz)
     └── buena/solucion.py  (plantilla para el aprendiz)
 ```
