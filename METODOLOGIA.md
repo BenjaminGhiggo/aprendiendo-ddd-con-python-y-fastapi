@@ -185,6 +185,9 @@ línea qué cambió.
     `lecciones/`, con el número al inicio).
   - `fase-1/proyecto/` — el **código único que crece** (no se duplica por capítulo).
     Se corre con `uv run pytest fase-1/proyecto/ -q`.
+  - **Ejercicios de refuerzo:** por **micro-paso**, en
+    `fase-1/capitulos/NN-nombre/ejercicios/micro-paso-M/` (misma estructura que
+    `lecciones/`: 3 ejercicios + 1 reto, `solucion_mala/main.py` vs `solucion_buena/main.py`).
 
 ### 3.9 Los diagramas se entregan como código Mermaid
 
