@@ -19,7 +19,8 @@ hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpet
 | 07 | Aggregates | [07-aggregates](07-aggregates/) | ✅ completo |
 | 08 | Events and the Message Bus | [08-events-message-bus](08-events-message-bus/) | ✅ completo |
 | 09 | Going to Town on the Message Bus | [09-message-bus-a-fondo](09-message-bus-a-fondo/) | ✅ completo |
-| 10–13 | Event-Driven (resto) | _(pendiente)_ | ⬜ |
+| 10 | Commands and Command Handler | [10-commands](10-commands/) | ✅ completo |
+| 11–13 | Event-Driven (resto) | _(pendiente)_ | ⬜ |
 
 - El código de un capítulo se corre con, p. ej.,
   `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
