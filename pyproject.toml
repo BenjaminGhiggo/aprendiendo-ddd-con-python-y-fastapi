@@ -3,6 +3,8 @@ name = "aprendiendo-ddd-con-python-y-fastapi"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "fastapi>=0.162.0",
+    "httpx>=0.28.1",
     "sqlalchemy>=2.1.6",
 ]
 

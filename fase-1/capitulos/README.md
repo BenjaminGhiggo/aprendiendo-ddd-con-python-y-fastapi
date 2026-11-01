@@ -13,7 +13,7 @@ hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpet
 | 01 | Domain Modeling | [01-domain-modeling](01-domain-modeling/) | ✅ completo |
 | 02 | Repository Pattern | [02-repository-pattern](02-repository-pattern/) | ✅ completo |
 | 03 | Coupling and Abstractions | [03-coupling-y-abstracciones](03-coupling-y-abstracciones/) | ✅ completo |
-| 04 | Service Layer + API (FastAPI) | _(pendiente)_ | ⬜ |
+| 04 | Service Layer + API (FastAPI) | [04-service-layer-fastapi](04-service-layer-fastapi/) | ✅ completo |
 | 05 | TDD High/Low Gear | _(pendiente)_ | ⬜ |
 | 06 | Unit of Work | _(pendiente)_ | ⬜ |
 | 07 | Aggregates | _(pendiente)_ | ⬜ |
