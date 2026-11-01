@@ -115,5 +115,12 @@ uv run pytest fase-1/capitulos/13-dependency-injection/proyecto/ -q      # 34 pa
 
 ---
 
+> 🛠️ **Nota de diseño (sigue valiendo lo del cap. 12):** los handlers que escriben el modelo de
+> lectura siguen necesitando `uow.sesion`. En los tests con **UoW falsa** fallan en silencio (el
+> bus aísla los eventos con `try/except`), así que el read model **solo se llena con la UoW real**
+> (ver [`proyecto/test_vistas.py`](proyecto/test_vistas.py)). Además, al montar el bus con
+> `bootstrap(...)` en los tests pasamos `iniciar_orm=False`, porque el `conftest.py` ya arranca el
+> ORM; si pusieras `True` en un test que ya mapeó, SQLAlchemy se queja de "mappers duplicados".
+
 > **Capítulo 13 completo.** 🎉 **¡Fin de los 13 capítulos del libro!** (Quedan los apéndices
 > como material opcional de cierre — ver [`../../../progreso/apendices.md`](../../../progreso/apendices.md).)

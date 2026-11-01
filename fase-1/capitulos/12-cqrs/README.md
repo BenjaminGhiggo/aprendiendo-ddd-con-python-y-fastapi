@@ -128,4 +128,12 @@ uv run pytest fase-1/capitulos/12-cqrs/proyecto/ -q      # 32 passed
 
 ---
 
+> 🛠️ **Nota de diseño (por qué no te confunda al estudiar):** el handler que llena el modelo
+> de lectura (`agregar_asignacion_a_vista`) hace `uow.sesion.execute(...)`. En los tests con
+> la **UoW falsa** (que no tiene `.sesion`) ese handler **falla y el bus lo ignora en silencio**
+> — es a propósito: los handlers de evento están aislados con `try/except` (eso se enseña en el
+> cap. 10). Por eso el modelo de lectura **solo se llena de verdad** cuando se usa la **UoW real**
+> de SQLAlchemy, que es como lo prueba [`proyecto/test_vistas.py`](proyecto/test_vistas.py). No
+> es un bug: es la propiedad de "si falla el read model, la asignación sigue funcionando".
+
 > **Capítulo 12 completo.** Siguiente: **Capítulo 13 — Dependency Injection (and Bootstrapping)**.

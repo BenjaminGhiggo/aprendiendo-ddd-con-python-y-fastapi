@@ -62,6 +62,19 @@ libro *Architecture Patterns with Python* (Cosmic Python).
   que parte del capítulo anterior) y `ejercicios/micro-paso-M/` (refuerzo por micro-paso).
   Se corre con, p. ej., `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
 
+## Convenciones del proyecto `allocation` (Fase 1)
+
+- **Tests por capítulo, nunca global.** Cada snapshot repite nombres (`test_modelo.py`, etc.),
+  así que un `uv run pytest` global choca por colisión de basenames. Correr siempre la **ruta
+  del capítulo** (como arriba).
+- **Handlers de evento aislados.** Desde el cap. 10 el bus envuelve cada handler de evento en
+  `try/except`: si uno falla, se **ignora en silencio** y no rompe el comando. Consecuencia al
+  estudiar (cap. 12–13): los handlers que escriben el **modelo de lectura** usan `uow.sesion`,
+  así que con la **UoW falsa** (sin `.sesion`) fallan sin ruido; el read model **solo se llena
+  con la UoW real** (`test_vistas.py`). No es un bug, es la propiedad de resiliencia.
+- **Bootstrap en tests (cap. 13+).** Montar el bus con `bootstrap(iniciar_orm=False, ...)`
+  porque el `conftest.py` ya arranca el ORM; `True` en un test ya mapeado da "mappers duplicados".
+
 ## Estructura fija de cada lección (`lecciones/NN-nombre/`)
 
 0. La pregunta (W→X) · 1. Objetivo · 2. Cita de la fuente · 3. El dolor/necesidad ·
