@@ -17,8 +17,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
   - [x] Ejercicio (bucles.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [x] **04 — Funciones** — ✅ completa
   - [x] Ejercicio (funciones.py) · [x] Recuerdo · _(pytest desde la lección 08)_
-- [ ] **05 — Listas y diccionarios**
-  - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
+- [x] **05 — Listas y diccionarios** — ✅ completa
+  - [x] Ejercicio (colecciones.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [ ] **06 — Clases y objetos** (clase→instancia→objeto→uso, §3.6)
   - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
 - [ ] **07 — Excepciones**

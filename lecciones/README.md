@@ -12,6 +12,7 @@ carpeta, junto a su código `.py`. Puedes repasarla cuando quieras sin depender 
 | 02 | Condicionales (if/else) | [02-condicionales](02-condicionales/) | `repaso/leccion-02` |
 | 03 | Bucles (for/while) | [03-bucles](03-bucles/) | `repaso/leccion-03` |
 | 04 | Funciones | [04-funciones](04-funciones/) | `repaso/leccion-04` |
+| 05 | Listas y diccionarios | [05-listas-y-diccionarios](05-listas-y-diccionarios/) | `repaso/leccion-05` |
 
 _(La lista crece a medida que avanzamos. El checklist completo está en [`../progreso/`](../progreso/).)_
 
