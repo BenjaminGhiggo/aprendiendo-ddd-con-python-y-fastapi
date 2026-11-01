@@ -13,8 +13,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
   - [x] Ejercicio (saludo.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [x] **02 — Condicionales (`if`/`else`)** — ✅ completa
   - [x] Ejercicio (decidir.py) · [x] Recuerdo · _(pytest desde la lección 08)_
-- [ ] **03 — Bucles (`for`/`while`)**
-  - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
+- [x] **03 — Bucles (`for`/`while`)** — ✅ completa
+  - [x] Ejercicio (bucles.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [ ] **04 — Funciones**
   - [ ] Ejercicios · [ ] pytest · [ ] Recuerdo
 - [ ] **05 — Listas y diccionarios**
