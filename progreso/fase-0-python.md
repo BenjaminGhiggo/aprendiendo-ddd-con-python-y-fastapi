@@ -12,7 +12,7 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 - [x] **01 — Variables y tipos** — ✅ completa
   - [x] Ejercicio (saludo.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto) · _(pytest desde la lección 08)_
 - [x] **02 — Condicionales (`if`/`else`)** — ✅ completa
-  - [x] Ejercicio (decidir.py) · [x] Recuerdo · _(pytest desde la lección 08)_
+  - [x] Ejercicio (decidir.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto) · _(pytest desde la lección 08)_
 - [x] **03 — Bucles (`for`/`while`)** — ✅ completa
   - [x] Ejercicio (bucles.py) · [x] Recuerdo · _(pytest desde la lección 08)_
 - [x] **04 — Funciones** — ✅ completa
