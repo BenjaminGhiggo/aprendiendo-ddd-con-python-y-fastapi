@@ -30,7 +30,7 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 > Continúa desde la Lección 06 (Clases y objetos). Base del modelo de dominio del libro.
 
 - [x] **09 — Encapsulación** (proteger el estado del objeto) — ✅ completa
-  - [x] Ejercicio (encapsulacion.py) · [x] Recuerdo
+  - [x] Ejercicio (encapsulacion.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto)
 - [x] **10 — Herencia** (reutilizar/extender una clase) — ✅ completa
   - [x] Ejercicio (herencia.py) · [x] Recuerdo
 - [x] **11 — Polimorfismo** (misma interfaz, distintos comportamientos) — ✅ completa
