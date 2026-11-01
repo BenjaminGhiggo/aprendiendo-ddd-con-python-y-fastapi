@@ -141,3 +141,62 @@ uv run pytest fase-1/proyecto/ -q      # 3 passed
 1. ¿Por qué `LineaPedido` compara por valor sin código extra?
 2. ¿Qué compara el `__eq__` de `Lote`?
 3. ¿Un lote sigue siendo el mismo si cambia su stock? ¿Por qué?
+
+---
+
+## Micro-paso 3 — El modelo registra sus asignaciones
+
+### 0. 🧭 La pregunta
+> *"Me piden reglas reales: no asignar si no alcanza, ni si el sku no coincide, no
+> descontar dos veces la misma línea, y poder desasignar. ¿Cuánto queda disponible de verdad?"*
+
+### 1. Objetivo
+Que el `Lote` recuerde sus líneas asignadas y calcule la disponibilidad, con
+`puede_asignar`, `asignar`, `desasignar`.
+
+### 2. Cita de la fuente
+> *"available_quantity is now a calculated property: purchased quantity minus allocated
+> quantity."* / *"can_allocate ... self.sku == line.sku and self.available_quantity >= line.qty"* — Cap. 1.
+
+### 3. El dolor / necesidad
+Un `cantidad_disponible` restado a mano no sabe si una línea ya estaba asignada ni cómo
+devolver stock. El lote debe guardar el conjunto de líneas asignadas.
+
+### 4. Explicación paso a paso (TDD)
+1. Tests del libro (puede_asignar por cantidad/sku, idempotencia, desasignar) → 6 en rojo.
+2. Refactor de `Lote`:
+   - `_cantidad_comprada` (fijo) y `_asignaciones` (un `set` de líneas).
+   - `asignar` añade solo si `puede_asignar`; el `set` evita duplicados.
+   - `cantidad_asignada` y `cantidad_disponible` son `@property` (se calculan).
+   - `puede_asignar` = sku coincide Y hay cantidad.
+3. Verde: 9 passed.
+
+### 5. Diagrama (Mermaid)
+```mermaid
+flowchart TD
+    C["_cantidad_comprada = 20"] --> D["cantidad_disponible (propiedad)"]
+    A["_asignaciones (set de líneas)"] --> AS["cantidad_asignada = suma de cantidades"]
+    AS --> D
+    D -. "usa" .-> PA{"puede_asignar?<br/>sku igual Y disponible >= línea"}
+```
+`cantidad_disponible` se calcula (comprada − asignada); nunca es un dato suelto que pueda quedar mal.
+
+### 6. Árbol de archivos
+```
+fase-1/proyecto/
+├── modelo.py          # Lote con _asignaciones (set), propiedades, puede_asignar
+└── test_modelo.py     # 9 tests
+```
+
+### 7. Tu turno
+Test: asignar y luego desasignar la misma línea devuelve la cantidad a 20.
+
+### 8. Comprobación
+```bash
+uv run pytest fase-1/proyecto/ -q      # 9 passed
+```
+
+### 9. Preguntas de recuerdo
+1. ¿Por qué `cantidad_disponible` es propiedad calculada?
+2. ¿Por qué asignar dos veces la misma línea no descuenta doble?
+3. ¿Qué comprueba `puede_asignar`?

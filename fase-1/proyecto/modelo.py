@@ -20,10 +20,28 @@ class Lote:
         self.referencia = referencia
         self.sku = sku
         self.eta = eta                       # fecha estimada de llegada (puede ser None)
-        self.cantidad_disponible = cantidad
+        self._cantidad_comprada = cantidad   # lo que se compró (no cambia)
+        self._asignaciones = set()           # conjunto de LineaPedido asignadas
 
     def asignar(self, linea: LineaPedido):
-        self.cantidad_disponible -= linea.cantidad
+        if self.puede_asignar(linea):
+            self._asignaciones.add(linea)    # es un set: asignar dos veces no duplica
+
+    def desasignar(self, linea: LineaPedido):
+        if linea in self._asignaciones:
+            self._asignaciones.remove(linea)
+
+    @property
+    def cantidad_asignada(self) -> int:
+        return sum(linea.cantidad for linea in self._asignaciones)
+
+    @property
+    def cantidad_disponible(self) -> int:
+        # Se CALCULA: lo comprado menos lo ya asignado.
+        return self._cantidad_comprada - self.cantidad_asignada
+
+    def puede_asignar(self, linea: LineaPedido) -> bool:
+        return self.sku == linea.sku and self.cantidad_disponible >= linea.cantidad
 
     # Igualdad por IDENTIDAD: dos lotes son "el mismo" si tienen la misma referencia,
     # sin importar que cambie el resto de sus datos.
