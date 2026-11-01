@@ -6,7 +6,7 @@ capítulo a capítulo con **TDD**.
 
 - `modelo.py` — el modelo de dominio (crece con cada capítulo).
 - `test_modelo.py` — las pruebas del dominio.
-- `apuntes/` — la explicación de cada capítulo (la "clase").
+- La **explicación** de cada capítulo (la clase) está en `../capitulos/NN-nombre/`.
 
 ## Correr las pruebas
 ```bash

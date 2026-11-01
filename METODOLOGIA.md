@@ -176,6 +176,14 @@ línea qué cambió.
 3. **No se usa Git dentro de subcarpetas** (repos anidados o submódulos): un repo
    anidado no sube su contenido y los submódulos exigen repos aparte.
 
+**Dónde vive cada cosa (orden del repo):**
+
+- **Fase 0 (Python/POO/SOLID):** cada lección autocontenida en `lecciones/NN-nombre/`.
+- **Fase 1 (el libro):** la **enseñanza** de cada capítulo en `capitulos/NN-nombre/`
+  (ordenado como `lecciones/`, con el número al inicio), y el **código único que
+  crece** en `proyecto/` (no se duplica por capítulo). El código se corre con
+  `uv run pytest proyecto/ -q`.
+
 ### 3.9 Los diagramas se entregan como código Mermaid
 
 - Los diagramas se dan **como bloque de código Mermaid** (el aprendiz lo pega en

@@ -54,6 +54,13 @@ libro *Architecture Patterns with Python* (Cosmic Python).
   que evoluciona por commits, con una rama por capítulo (`capitulo-NN-nombre`).
   Nunca Git dentro de subcarpetas.
 
+## Dónde vive cada cosa
+
+- **Fase 0:** lecciones autocontenidas en `lecciones/NN-nombre/` (con sus `ejercicios/`).
+- **Fase 1 (el libro):** la **enseñanza** por capítulo en `capitulos/NN-nombre/` (número
+  al inicio, como lecciones) y el **código único que evoluciona** en `proyecto/`
+  (no se duplica por capítulo; se corre con `uv run pytest proyecto/ -q`).
+
 ## Estructura fija de cada lección (`lecciones/NN-nombre/`)
 
 0. La pregunta (W→X) · 1. Objetivo · 2. Cita de la fuente · 3. El dolor/necesidad ·
