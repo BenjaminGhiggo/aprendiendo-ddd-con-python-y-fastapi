@@ -21,7 +21,8 @@ hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpet
 | 09 | Going to Town on the Message Bus | [09-message-bus-a-fondo](09-message-bus-a-fondo/) | ✅ completo |
 | 10 | Commands and Command Handler | [10-commands](10-commands/) | ✅ completo |
 | 11 | Event-Driven Microservices | [11-microservicios-eventos](11-microservicios-eventos/) | ✅ completo |
-| 12–13 | Event-Driven (resto) | _(pendiente)_ | ⬜ |
+| 12 | CQRS | [12-cqrs](12-cqrs/) | ✅ completo |
+| 13 | Dependency Injection (and Bootstrapping) | _(pendiente)_ | ⬜ |
 
 - El código de un capítulo se corre con, p. ej.,
   `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
