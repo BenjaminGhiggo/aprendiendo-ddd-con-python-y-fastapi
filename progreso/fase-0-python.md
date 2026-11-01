@@ -34,7 +34,7 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 - [x] **10 — Herencia** (reutilizar/extender una clase) — ✅ completa
   - [x] Ejercicio (herencia.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto)
 - [x] **11 — Polimorfismo** (misma interfaz, distintos comportamientos) — ✅ completa
-  - [x] Ejercicio (polimorfismo.py) · [x] Recuerdo
+  - [x] Ejercicio (polimorfismo.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto)
 - [x] **12 — Abstracción** (clases abstractas, `ABC`) — ✅ completa
   - [x] Ejercicio (abstraccion.py) · [x] Recuerdo
 
