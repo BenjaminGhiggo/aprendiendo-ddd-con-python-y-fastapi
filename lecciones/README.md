@@ -17,6 +17,11 @@ carpeta, junto a su código `.py`. Puedes repasarla cuando quieras sin depender 
 | 07 | Excepciones | [07-excepciones](07-excepciones/) | `repaso/leccion-07` |
 | 08 | Módulos, entorno con uv y primer pytest | [08-modulos-y-pytest](08-modulos-y-pytest/) | `repaso/leccion-08` |
 
+### POO (a fondo) y SOLID
+| # | Lección | Carpeta | Rama de repaso |
+|---|---------|---------|----------------|
+| 09 | Encapsulación | [09-encapsulacion](09-encapsulacion/) | `repaso/leccion-09` |
+
 _(La lista crece a medida que avanzamos. El checklist completo está en [`../progreso/`](../progreso/).)_
 
 ## Cómo repasar una lección
