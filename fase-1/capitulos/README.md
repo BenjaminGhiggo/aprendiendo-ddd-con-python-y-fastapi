@@ -16,7 +16,7 @@ hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpet
 | 04 | Service Layer + API (FastAPI) | [04-service-layer-fastapi](04-service-layer-fastapi/) | ✅ completo |
 | 05 | TDD High/Low Gear | [05-tdd-marchas](05-tdd-marchas/) | ✅ completo |
 | 06 | Unit of Work | [06-unit-of-work](06-unit-of-work/) | ✅ completo |
-| 07 | Aggregates | _(pendiente)_ | ⬜ |
+| 07 | Aggregates | [07-aggregates](07-aggregates/) | ✅ completo |
 | 08–13 | Event-Driven Architecture | _(pendiente)_ | ⬜ |
 
 - El código de un capítulo se corre con, p. ej.,
