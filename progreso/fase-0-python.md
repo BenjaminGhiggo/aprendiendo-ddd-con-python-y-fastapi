@@ -36,7 +36,7 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
 - [x] **11 — Polimorfismo** (misma interfaz, distintos comportamientos) — ✅ completa
   - [x] Ejercicio (polimorfismo.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto)
 - [x] **12 — Abstracción** (clases abstractas, `ABC`) — ✅ completa
-  - [x] Ejercicio (abstraccion.py) · [x] Recuerdo
+  - [x] Ejercicio (abstraccion.py) · [x] Recuerdo · [x] Ejercicios de refuerzo (3 + reto)
 
 ## SOLID — los 5 principios (foco en SRP y DIP, los que usa el libro)
 > La Introducción del libro trata Encapsulation/Abstractions, Layering y el DIP.
