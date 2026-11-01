@@ -1,7 +1,7 @@
 # Capítulo 1 — Domain Modeling
 
-> Fase 1 · el libro. El **código** vive en [`../../proyecto/`](../../proyecto/)
-> (un único proyecto que crece). Aquí está **la clase**.
+> Fase 1 · el libro. Este capítulo es autocontenido: la clase (aquí), el código en
+> [`proyecto/`](proyecto/) y los ejercicios en [`ejercicios/`](ejercicios/).
 
 Avanza en micro-pasos. Cada paso sigue la estructura 0–9.
 
@@ -74,7 +74,7 @@ Asignar dos líneas distintas al mismo lote y verificar que la cantidad baja las
 
 ### 8. Comprobación
 ```bash
-uv run pytest fase-1/proyecto/ -q      # 1 passed
+uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q      # 1 passed
 ```
 
 ### 9. Preguntas de recuerdo
@@ -124,7 +124,7 @@ Value object: iguales si todos los datos coinciden. Entidad: iguales si comparte
 
 ### 6. Árbol de archivos
 ```
-fase-1/proyecto/
+proyecto/    (dentro de este capítulo)
 ├── modelo.py          # Lote con __eq__ y __hash__
 └── test_modelo.py     # + tests de igualdad
 ```
@@ -134,7 +134,7 @@ Comprobar que dos lotes con referencias distintas NO son iguales.
 
 ### 8. Comprobación
 ```bash
-uv run pytest fase-1/proyecto/ -q      # 3 passed
+uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q      # 3 passed
 ```
 
 ### 9. Preguntas de recuerdo
@@ -183,7 +183,7 @@ flowchart TD
 
 ### 6. Árbol de archivos
 ```
-fase-1/proyecto/
+proyecto/    (dentro de este capítulo)
 ├── modelo.py          # Lote con _asignaciones (set), propiedades, puede_asignar
 └── test_modelo.py     # 9 tests
 ```
@@ -193,7 +193,7 @@ Test: asignar y luego desasignar la misma línea devuelve la cantidad a 20.
 
 ### 8. Comprobación
 ```bash
-uv run pytest fase-1/proyecto/ -q      # 9 passed
+uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q      # 9 passed
 ```
 
 ### 9. Preguntas de recuerdo
@@ -241,7 +241,7 @@ flowchart TD
 
 ### 6. Árbol de archivos
 ```
-fase-1/proyecto/
+proyecto/    (dentro de este capítulo)
 ├── modelo.py          # + __gt__, SinStock, función asignar()
 └── test_modelo.py     # 13 tests
 ```
@@ -251,7 +251,7 @@ Test: asignar la misma línea a dos lotes solo la asigna a uno.
 
 ### 8. Comprobación
 ```bash
-uv run pytest fase-1/proyecto/ -q      # 13 passed
+uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q      # 13 passed
 ```
 
 ### 9. Preguntas de recuerdo

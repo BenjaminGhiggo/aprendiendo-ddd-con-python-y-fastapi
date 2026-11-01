@@ -57,10 +57,10 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 ## Dónde vive cada cosa
 
 - **Fase 0:** lecciones autocontenidas en `lecciones/NN-nombre/` (con sus `ejercicios/`).
-- **Fase 1 (el libro):** todo bajo `fase-1/` — la **enseñanza** por capítulo en
-  `fase-1/capitulos/NN-nombre/` (número al inicio, como lecciones) y el **código único
-  que evoluciona** en `fase-1/proyecto/` (no se duplica por capítulo; se corre con
-  `uv run pytest fase-1/proyecto/ -q`).
+- **Fase 1 (el libro):** cada capítulo es autocontenido en `fase-1/capitulos/NN-nombre/`:
+  `README.md` (la clase), `proyecto/` (el código al final de ese capítulo, un snapshot
+  que parte del capítulo anterior) y `ejercicios/micro-paso-M/` (refuerzo por micro-paso).
+  Se corre con, p. ej., `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
 
 ## Estructura fija de cada lección (`lecciones/NN-nombre/`)
 

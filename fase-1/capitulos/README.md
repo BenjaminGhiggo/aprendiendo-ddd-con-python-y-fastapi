@@ -1,9 +1,12 @@
 # Capítulos — Fase 1 (el libro *Cosmic Python*)
 
-Aquí vive **la enseñanza** de cada capítulo, ordenada por número (igual que
-`lecciones/`). El **código** del proyecto no se duplica aquí: vive en
-[`../proyecto/`](../proyecto/) como un único proyecto que **evoluciona** capítulo a
-capítulo (ver metodología §3.9b y §6.1).
+Cada capítulo es **autocontenido** (como `lecciones/`): dentro de su carpeta están
+**la clase** (`README.md`), **el código** del proyecto tal como queda al final de ese
+capítulo (`proyecto/`) y los **ejercicios** (`ejercicios/`).
+
+El código es un **snapshot por capítulo**: el capítulo N parte del código del N-1 y lo
+hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpetas
+`proyecto/` (o el historial de Git).
 
 | # | Capítulo | Carpeta | Estado |
 |---|----------|---------|--------|
@@ -16,5 +19,6 @@ capítulo (ver metodología §3.9b y §6.1).
 | 07 | Aggregates | _(pendiente)_ | ⬜ |
 | 08–13 | Event-Driven Architecture | _(pendiente)_ | ⬜ |
 
-- El código se corre con `uv run pytest fase-1/proyecto/ -q`.
+- El código de un capítulo se corre con, p. ej.,
+  `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
 - El avance detallado por secciones está en [`../progreso/`](../progreso/).

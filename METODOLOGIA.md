@@ -179,15 +179,16 @@ línea qué cambió.
 **Dónde vive cada cosa (orden del repo):**
 
 - **Fase 0 (Python/POO/SOLID):** cada lección autocontenida en `lecciones/NN-nombre/`.
-- **Fase 1 (el libro):** todo bajo `fase-1/`, para dejar clara la relación entre la
-  clase y el código:
-  - `fase-1/capitulos/NN-nombre/` — la **enseñanza** de cada capítulo (ordenado como
-    `lecciones/`, con el número al inicio).
-  - `fase-1/proyecto/` — el **código único que crece** (no se duplica por capítulo).
-    Se corre con `uv run pytest fase-1/proyecto/ -q`.
-  - **Ejercicios de refuerzo:** por **micro-paso**, en
-    `fase-1/capitulos/NN-nombre/ejercicios/micro-paso-M/` (misma estructura que
-    `lecciones/`: 3 ejercicios + 1 reto, `solucion_mala/main.py` vs `solucion_buena/main.py`).
+- **Fase 1 (el libro):** cada capítulo es **autocontenido** en
+  `fase-1/capitulos/NN-nombre/`, como una lección:
+  - `README.md` — la **clase** del capítulo (micro-pasos, estructura 0–9).
+  - `proyecto/` — el **código** del proyecto tal como queda **al final de ese
+    capítulo** (un *snapshot*). El capítulo N parte del código del N-1 y lo evoluciona;
+    la diferencia entre capítulos se ve comparando sus `proyecto/`. Se corre con, p. ej.,
+    `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
+  - `ejercicios/micro-paso-M/` — **ejercicios de refuerzo** por micro-paso (misma
+    estructura que `lecciones/`: 3 ejercicios + 1 reto, `solucion_mala/main.py` vs
+    `solucion_buena/main.py`).
 
 ### 3.9 Los diagramas se entregan como código Mermaid
 
