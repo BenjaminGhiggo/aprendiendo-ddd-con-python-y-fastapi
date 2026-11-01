@@ -8,3 +8,9 @@ dependencies = []
 dev = [
     "pytest>=9.2.0",
 ]
+
+[tool.pytest.ini_options]
+# Las carpetas de ejercicios tienen archivos de prueba con nombres repetidos
+# (a propósito, para que cada ejercicio sea autocontenido). Se corren de forma
+# individual apuntando a su carpeta; la corrida global del repo las omite.
+norecursedirs = ["ejercicios"]
