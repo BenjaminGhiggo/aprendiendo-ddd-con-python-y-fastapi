@@ -129,6 +129,19 @@ Cada lección cierra comprobando que el concepto quedó, con las cuatro vías:
 - Lo mismo aplica a **cualquier imagen que el aprendiz comparta**: se analiza y se
   usa, nunca se ignora.
 
+### 3.9b Ejercicios de refuerzo (académicos)
+
+Cada lección incluye una carpeta `ejercicios/` con **3 ejercicios resueltos** más
+**1 reto opcional** para el aprendiz. Formato de cada ejercicio:
+
+1. **Problema** — enunciado en lista enumerada.
+2. **Solución mala (que funciona)** — corre, pero con un defecto.
+3. **Solución buena** — corregida, **resaltando qué hacía mal la anterior**.
+
+El reto (4.º) trae solo el enunciado: el aprendiz escribe su solución mala y su buena,
+y se revisan juntos. Cada solución se guarda como `.py` ejecutable **verificado** y se
+explica en `ejercicios/ejercicios.md`.
+
 ### 3.9 Los diagramas se entregan como código Mermaid
 
 - Los diagramas se dan **como bloque de código Mermaid** (el aprendiz lo pega en
