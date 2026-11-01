@@ -22,3 +22,8 @@ print("Ciudad: Lima")
 ```
 🟢 **Qué mejoró:** si el texto es fijo, va de una sola pieza entre comillas. Sin
 concatenaciones inútiles.
+
+**Ver la mejora línea por línea** (desde esta carpeta):
+```bash
+git diff --no-index solucion_mala/main.py solucion_buena/main.py
+```

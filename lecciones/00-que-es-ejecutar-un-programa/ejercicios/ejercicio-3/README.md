@@ -21,3 +21,8 @@ print("Calculando...")
 ```
 🟢 **Qué mejoró:** la nota va como **comentario** con `#` fuera del `print`. Python la
 ignora y **no** se muestra.
+
+**Ver la mejora línea por línea** (desde esta carpeta):
+```bash
+git diff --no-index solucion_mala/main.py solucion_buena/main.py
+```

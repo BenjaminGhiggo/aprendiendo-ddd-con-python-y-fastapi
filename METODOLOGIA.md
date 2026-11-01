@@ -162,6 +162,20 @@ lecciones/NN-nombre/ejercicios/
 Nombres explícitos (`solucion_mala` / `solucion_buena`) y punto de entrada estándar
 `main.py` en cada una, para que la estructura escale con orden.
 
+**Ver la mejora:** desde la carpeta del ejercicio,
+`git diff --no-index solucion_mala/main.py solucion_buena/main.py` muestra línea por
+línea qué cambió.
+
+**Cada herramienta en su escala:**
+
+1. **Ejercicios pequeños (Fase 0) → carpetas** `solucion_mala/` y `solucion_buena/`.
+   Duplicar pocas líneas cuesta poco y tenerlas lado a lado se lee mejor.
+2. **Proyecto que crece (Fase 1, allocation) → un único código que evoluciona con
+   Git.** La versión simple es un commit, la mejora es el commit siguiente, y cada
+   capítulo cierra en su rama (ver §6.1). No se duplica código.
+3. **No se usa Git dentro de subcarpetas** (repos anidados o submódulos): un repo
+   anidado no sube su contenido y los submódulos exigen repos aparte.
+
 ### 3.9 Los diagramas se entregan como código Mermaid
 
 - Los diagramas se dan **como bloque de código Mermaid** (el aprendiz lo pega en
@@ -233,6 +247,9 @@ Todo lo que hagamos y aprendamos se registra con **Git**: ramas y commits.
 2. **Una rama por trabajo/lección**, partiendo de la de integración:
    - lecciones → `leccion-NN-nombre` (ej. `leccion-01-variables`)
    - configuración/ajustes → `config/...` o `chore/...`
+   - capítulos del libro (Fase 1) → `capitulo-NN-nombre`; cada mejora del proyecto
+     es un commit dentro de esa rama. Así lo organiza el libro:
+     *"each chapter has its own branch"* (Preface → Example Code and Coding Along).
 3. **Commits pequeños y descriptivos** a medida que avanzamos (no uno gigante al final).
 4. Al terminar, se **mergea** la rama de trabajo en la de integración y se hace push.
 5. Git también es **material de aprendizaje**: explicamos cada comando que usamos.

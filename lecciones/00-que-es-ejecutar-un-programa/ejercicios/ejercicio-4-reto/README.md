@@ -13,3 +13,8 @@
 - Escribe tu versión buena en [`solucion_buena/main.py`](solucion_buena/main.py).
 
 > Cuando lo tengas, pásamelo y lo revisamos juntos (comparamos tu mala vs. tu buena).
+
+**Para compararlas** cuando tengas tus dos versiones (desde esta carpeta):
+```bash
+git diff --no-index solucion_mala/main.py solucion_buena/main.py
+```

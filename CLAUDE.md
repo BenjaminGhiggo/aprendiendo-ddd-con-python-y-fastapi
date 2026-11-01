@@ -49,6 +49,10 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 - **Git para todo:** rama de integración `ccr-b56bf27c-qa5zqh`; una rama por
   lección (`leccion-NN-nombre`) o ajuste (`config/...`, `chore/...`); commits
   pequeños; merge a integración al terminar. Git también se explica como aprendizaje.
+- **Escala:** ejercicios pequeños en carpetas `solucion_mala/` y `solucion_buena/`
+  (comparar con `git diff --no-index`); el proyecto de la Fase 1 es un único código
+  que evoluciona por commits, con una rama por capítulo (`capitulo-NN-nombre`).
+  Nunca Git dentro de subcarpetas.
 
 ## Estructura fija de cada lección (`lecciones/NN-nombre/`)
 

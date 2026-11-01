@@ -18,3 +18,8 @@ print('Ella gritó: "Alto!"')
 ```
 🟢 **Qué mejoró:** usa **comillas simples por fuera**, así las dobles del texto van
 tal cual, sin escapes.
+
+**Ver la mejora línea por línea** (desde esta carpeta):
+```bash
+git diff --no-index solucion_mala/main.py solucion_buena/main.py
+```
