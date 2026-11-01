@@ -45,8 +45,8 @@ Cada lección se marca ✅ solo con sus 4 comprobaciones en verde (§3.4).
   - [x] Ejercicio (srp.py) · [x] Recuerdo
 - [x] **14 — OCP** (Abierto/Cerrado) — ✅ completa
   - [x] Ejercicio (ocp.py) · [x] Recuerdo
-- [ ] **15 — LSP** (Sustitución de Liskov)
-  - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
+- [x] **15 — LSP** (Sustitución de Liskov) — ✅ completa
+  - [x] Ejercicio (lsp.py) · [x] Recuerdo
 - [ ] **16 — ISP** (Segregación de interfaces)
   - [ ] Ejercicio · [ ] pytest · [ ] Recuerdo
 - [ ] **17 — DIP** (Inversión de dependencias) ⭐ clave para el libro
