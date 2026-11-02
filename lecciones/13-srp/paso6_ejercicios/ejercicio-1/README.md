@@ -1,6 +1,6 @@
 # Ejercicio 1 — Pedido que hace demasiado
 
-> Lección 13 · refuerzo (SRP). Cita (regla 6): *"SOLID ... single responsibility ..."* — Cap. 1.
+> Lección 13 · refuerzo (SRP). Cita (regla 6): *"SOLID ... single responsibility ..."* — Introducción (nota 2).
 
 **Problema:**
 1. Un pedido calcula su total, imprime un recibo y se guarda.
