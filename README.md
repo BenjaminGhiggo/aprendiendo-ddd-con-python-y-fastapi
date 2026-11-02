@@ -54,6 +54,7 @@ aprendiendo-ddd-con-python-y-fastapi/
 │       ├── README.md       ←   índice de capítulos
 │       └── NN-nombre/      ←   README (clase) + proyecto/ + ejercicios/
 ├── progreso/               ← checklist de avance (lo marcas tú)
+├── despliegue/             ← opcional: sitio de estudio local y API del proyecto
 └── docs/
     └── fuente/             ← el libro: .md citable, .pdf e imágenes de figuras
 ```
@@ -68,6 +69,9 @@ uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q # tests de un cap
 ```
 > Los tests se corren **por lección o por capítulo**, nunca todos juntos (hay archivos
 > con el mismo nombre en distintas carpetas, a propósito).
+
+**Opcional:** estudiar en un **sitio web local** (menú, buscador, diagramas dibujados) o
+probar la **API del proyecto** con `/docs` → ver [`despliegue/README.md`](despliegue/README.md).
 
 ## Metodología
 
