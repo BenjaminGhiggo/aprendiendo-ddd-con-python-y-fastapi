@@ -15,7 +15,7 @@ Eventos como dataclasses; el `Producto` los registra en vez de lanzar excepción
 
 ### 2. Cita de la fuente
 > *"Domain events are a vehicle for capturing the idea that some interactions with a
-> system are triggers for others."* — Cap. 8.
+> system are triggers for others."* — Prefacio (resumen de la Parte II, *Event-driven architecture*).
 
 ### 4. Explicación paso a paso (TDD)
 1. `eventos.py`: `@dataclass class SinStock(Evento): sku: str`.

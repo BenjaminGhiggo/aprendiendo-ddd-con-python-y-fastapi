@@ -59,8 +59,9 @@ uv run pytest fase-1/capitulos/05-tdd-marchas/proyecto/ -q      # 24 passed
 Entender cuándo subir a marcha alta (servicio) y cuándo bajar a marcha baja (dominio).
 
 ### 2. Cita de la fuente
-> *"When starting a journey, the bicycle needs to be in a low gear ... we can go faster
-> ... in a high gear."* — Cap. 5.
+> *"When starting a journey, the bicycle needs to be in a low gear so that it can overcome
+> inertia. Once we're off and running, we can go faster and more efficiently by changing into
+> a high gear"* — Cap. 5.
 
 ### 3. Explicación
 - **Marcha alta** (servicio): para features y bugs normales; menos acoplado, buena cobertura.

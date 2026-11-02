@@ -80,8 +80,9 @@ uv run pytest fase-1/capitulos/02-repository-pattern/proyecto/ -q      # 15 pass
 Mapear el modelo a tablas con **mapeo imperativo**, manteniendo `modelo.py` sin imports de ORM.
 
 ### 2. Cita de la fuente
-> *"The ORM imports ... the domain model, and not the other way around. ... if we never
-> call start_mappers, our domain model classes stay blissfully unaware of the database."* — Cap. 2.
+> *"The ORM imports (or "depends on" or "knows about") the domain model, and not the other
+> way around."* / *"But if we never call that function, our domain model classes stay
+> blissfully unaware of the database."* — Cap. 2.
 
 ### 3. El dolor / necesidad
 Si el modelo importa el ORM, queda acoplado a la base de datos. Invertimos: el ORM conoce al modelo.
