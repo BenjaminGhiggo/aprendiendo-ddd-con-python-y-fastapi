@@ -131,7 +131,7 @@ Cada lección cierra comprobando que el concepto quedó, con las cuatro vías:
 
 ### 3.9b Ejercicios de refuerzo (académicos)
 
-Cada lección incluye una carpeta `ejercicios/` con **3 ejercicios resueltos** más
+Cada lección incluye una carpeta `paso6_ejercicios/` (en Fase 1: `ejercicios/micro-paso-M/`) con **3 ejercicios resueltos** más
 **1 reto opcional** para el aprendiz. Formato de cada ejercicio:
 
 1. **Problema** — enunciado en lista enumerada.
@@ -146,7 +146,7 @@ y se revisan juntos. Cada solución se guarda como `.py` ejecutable **verificado
 No hay un `ejercicios.md` único.
 
 ```
-lecciones/NN-nombre/ejercicios/
+lecciones/NN-nombre/paso6_ejercicios/
 ├── ejercicio-1/
 │   ├── README.md               (enunciado + mala/buena de ESTE ejercicio)
 │   ├── solucion_mala/main.py
@@ -215,33 +215,67 @@ línea qué cambió.
 
 ---
 
-## 5. Estructura fija de cada lección
+## 5. Estructura fija de cada lección (formato "formulario académico")
 
-Cada lección vive en `lecciones/NN-nombre/` y sigue siempre este guion
-(en pasos numerados, regla 3):
+Cada lección vive en `lecciones/NN-nombre/` y es un **formulario**: como un compendio
+académico, junta teoría, fórmulas, propiedades, errores típicos, ejemplos resueltos y
+problemas propuestos con claves. La **plantilla de referencia** es
+[`lecciones/05-listas-y-diccionarios/`](lecciones/05-listas-y-diccionarios/).
 
-0. **🧭 La pregunta** — *"Tengo W, ahora me piden X, ¿qué hago? ¡estoy perdido!"* (§3.5)
-1. **Objetivo** — el único concepto nuevo de esta micro-lección.
-2. **Cita de la fuente** — el fragmento que motiva o respalda el concepto.
-3. **El dolor / necesidad** — por qué lo que tenía ya no basta (regla 2).
-4. **Explicación paso a paso** — con el código base escrito, comentado y **sin
-   recortar pasos** (§3.6), en su **forma simple** (§3.7).
-5. **Figura y/o diagrama** — imagen original del libro si la hay (§3.8) + diagrama
-   **Mermaid en código** fiel a la figura (§3.9), con su explicación (regla 9).
-6. **Árbol de archivos** actualizado (regla 7).
-7. **Tu turno (huecos / ejercicio)** — las partes que escribes tú (§3.2).
-8. **Prueba `pytest`** — el test que tu código debe pasar (§3.3, regla 8 con `uv`).
-9. **Preguntas de recuerdo** — para cerrar (§3.4).
+### 5.1 Guía y orden de estudio
 
-Carpeta tipo de una lección:
+- El repo tiene un **"▶ EMPIEZA AQUÍ"** en el [`README.md`](README.md) raíz y una guía
+  [`COMO-ESTUDIAR.md`](COMO-ESTUDIAR.md).
+- [`lecciones/README.md`](lecciones/README.md) lista las lecciones **en orden**, con
+  *Antes necesitas*, tiempo aproximado y un mapa Mermaid de dependencias.
+- Cada lección tiene arriba **"Orden de estudio: N de 18"**, la **Ruta de estudio** (tabla de
+  pasos con tiempos) y navegación **⬅️ anterior · 🏠 índice · ➡️ siguiente** (arriba y abajo).
+- Al final, un **semáforo 🚦** indica si se puede avanzar: 🟢 ≥ 9/12 problemas + `paso3`
+  correcto + preguntas sin mirar · 🟡 6–8 (repasar §8 y §9) · 🔴 < 6 (repetir).
+- El aprendiz registra su avance en `progreso/fase-0-python.md` → *"Mi avance"*.
+
+### 5.2 Secciones del README (paso 0)
+
+La numeración es **fija en todas las lecciones** (el semáforo y la guía la citan por número):
+
+- Arriba: título, *"Orden de estudio: N de 18"*, navegación ⬅️🏠➡️ y **🧭 Ruta de estudio**.
+- **§0 🧭 La pregunta** — *"Tengo W, ahora me piden X, ¿qué hago?"* (§3.5)
+- **§1 Objetivos** — qué podrá hacer al terminar.
+- **§2 Cita de la fuente** — fragmento exacto, verificado contra `docs/fuente/`.
+- **§3 El dolor / necesidad** — por qué lo que tenía ya no basta (regla 2).
+- **§4 📘 Teoría** — definiciones en recuadros, vocabulario y regla de oro.
+- **§5 y §6 🧮 Formulario** — tablas *operación · sintaxis · ejemplo · resultado* (en SOLID:
+  *síntoma · regla · plantilla · qué logra* y una tabla de diagnóstico).
+- **§7 📐 Propiedades** — las reglas que siempre se cumplen.
+- **§8 ⚠️ Errores frecuentes** — ❌ así no · qué pasa (mensaje real) · ✅ así sí.
+- **§9 ✍️ Ejemplos resueltos** — 4, de fácil a avanzado, paso a paso y con traza (§3.6).
+- **§10 📝 Problemas propuestos** — 12: 4 🟢, 4 🟡, 4 🔴 (el último, puente al libro).
+- **§11 🔑 Claves** — respuestas plegadas, **sacadas de la salida real** del solucionario.
+- **§12 🗺️ Mapa mental / figura** — Mermaid en código (§3.9) + explicación; figura del libro si la hay (§3.8).
+- **§13 🌳 Árbol de archivos** (regla 7).
+- **§14 🤝 Tu turno y ✅ comprobación** — ejecutar y comparar (00–07) o pytest rojo → verde (08+).
+- **§15 ❓ Preguntas de recuerdo** — con respuesta plegada (§3.4).
+- **§16 🚦 Semáforo** — criterio para pasar a la siguiente.
+
+### 5.3 Archivos (numerados en el orden en que se estudian)
 
 ```
 lecciones/NN-nombre/
-├── diagramas/
-│   └── NN-concepto.mmd     # código Mermaid (se pega en un previsualizador)
-├── codigo.py
-└── test_codigo.py
+├── README.md                    ← PASO 0 · EMPIEZA AQUÍ (el formulario)
+├── paso1_formulas.py            ← PASO 1 · cada fila de las tablas, ejecutable y etiquetada (L1, D1…)
+├── paso2_ejemplos_resueltos.py  ← PASO 2 · los ejemplos resueltos del README
+├── paso3_tu_turno.py            ← PASO 3 · huecos # TODO + "Salida esperada" (§3.2)
+├── paso4_tu_turno_solucion.py   ← PASO 4 · solución de referencia
+├── test_paso3_tu_turno.py       ← (desde la 08) test de paso3: rojo → verde (§3.3)
+├── paso5_solucionario/          ← PASO 5 · nivel_basico.py, nivel_intermedio.py, nivel_avanzado.py
+└── paso6_ejercicios/            ← PASO 6 · refuerzo mala vs buena (§3.9b)
 ```
+
+- Se usa `pasoN_…` y no `N_…` porque un módulo cuyo nombre empieza con un número **no se puede
+  importar** (importa desde la Lección 08, con pytest).
+- **Verificación obligatoria** antes de dar una lección por construida: todos los `.py` corren
+  (código de salida 0), las tablas y claves salen de la salida real, los Mermaid renderizan y
+  las citas existen en la fuente.
 
 ---
 

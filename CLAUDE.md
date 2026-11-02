@@ -56,7 +56,10 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 
 ## Dónde vive cada cosa
 
-- **Fase 0:** lecciones autocontenidas en `lecciones/NN-nombre/` (con sus `ejercicios/`).
+- **Fase 0:** lecciones autocontenidas en `lecciones/NN-nombre/`, en formato **formulario** con
+  archivos numerados (`paso1_…` a `paso6_ejercicios/`). Plantilla: `lecciones/05-listas-y-diccionarios/`.
+- **Guía de estudio:** `README.md` raíz (▶ EMPIEZA AQUÍ), `COMO-ESTUDIAR.md` y `lecciones/README.md`
+  (orden, requisitos, tiempos). Si agregas o renombras una lección, actualiza los tres.
 - **Fase 1 (el libro):** cada capítulo es autocontenido en `fase-1/capitulos/NN-nombre/`:
   `README.md` (la clase), `proyecto/` (el código al final de ese capítulo, un snapshot
   que parte del capítulo anterior) y `ejercicios/micro-paso-M/` (refuerzo por micro-paso).
@@ -75,11 +78,24 @@ libro *Architecture Patterns with Python* (Cosmic Python).
 - **Bootstrap en tests (cap. 13+).** Montar el bus con `bootstrap(iniciar_orm=False, ...)`
   porque el `conftest.py` ya arranca el ORM; `True` en un test ya mapeado da "mappers duplicados".
 
-## Estructura fija de cada lección (`lecciones/NN-nombre/`)
+## Estructura fija de cada lección (`lecciones/NN-nombre/`) — formato formulario
 
-0. La pregunta (W→X) · 1. Objetivo · 2. Cita de la fuente · 3. El dolor/necesidad ·
-4. Explicación paso a paso (sin recortar) · 5. Figura del libro + diagrama Mermaid (código) ·
-6. Árbol de archivos · 7. Tu turno (huecos) · 8. Prueba pytest · 9. Preguntas de recuerdo.
+Detalle completo en `METODOLOGIA.md` §5. Resumen:
+
+- **Arriba:** "Orden de estudio: N de 18", navegación ⬅️🏠➡️ (también abajo) y **Ruta de estudio**.
+- **Secciones con numeración FIJA:** §0 pregunta (W→X) · §1 objetivos · §2 cita de la fuente ·
+  §3 dolor · §4 teoría (recuadros, vocabulario, regla de oro) · §5–§6 tablas de fórmulas ·
+  §7 propiedades · §8 errores frecuentes (mensaje real) · §9 4 ejemplos resueltos · §10 12
+  problemas (4🟢 4🟡 4🔴) · §11 claves plegadas · §12 mapa/figura Mermaid · §13 árbol ·
+  §14 tu turno + comprobación · §15 preguntas de recuerdo con respuesta · §16 semáforo 🚦.
+- **Archivos en orden de estudio:** `README.md` (paso 0) · `paso1_formulas.py` ·
+  `paso2_ejemplos_resueltos.py` · `paso3_tu_turno.py` (`# TODO`) · `paso4_tu_turno_solucion.py` ·
+  `test_paso3_tu_turno.py` (desde la 08) · `paso5_solucionario/` · `paso6_ejercicios/`.
+  Prefijo `pasoN_` (no `N_`) para que sean importables.
+- **Verificar siempre:** todo `.py` corre, tablas/claves salen de la salida real, Mermaid
+  renderiza, citas existen en la fuente.
+- **Progreso:** `progreso/fase-0-python.md` separa *"Mi avance"* (lo marca el aprendiz) de
+  *"Material construido"* (lo mantiene el asistente).
 
 El avance se registra en la carpeta `progreso/` (índice en `progreso/README.md`
 y un archivo por capítulo con secciones y figuras).
