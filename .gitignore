@@ -22,3 +22,7 @@ htmlcov/
 .idea/
 .vscode/
 .DS_Store
+
+# Sitio de estudio (se genera con despliegue/sitio/construir_sitio.py)
+build/
+site/
