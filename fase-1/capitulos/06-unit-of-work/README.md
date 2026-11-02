@@ -14,8 +14,8 @@
 Una Unit of Work (context manager) que agrupa repositorio + commit/rollback.
 
 ### 2. Cita de la fuente
-> *"The Unit of Work ... allows us to fully decouple our service layer from the data
-> layer."* — Cap. 6.
+> *"the Unit of Work (UoW) pattern is our abstraction over the idea of atomic operations.
+> It will allow us to finally and fully decouple our service layer from the data layer."* — Cap. 6.
 
 ### 3. El dolor / necesidad
 Repo + commit sueltos = el servicio conoce la sesión y la atomicidad se dispersa.
@@ -58,8 +58,9 @@ uv run pytest fase-1/capitulos/06-unit-of-work/proyecto/ -q      # 26 passed
 > *"¿Cómo conecto la UoW a la base de datos real y garantizo atomicidad?"*
 
 ### 2. Cita de la fuente
-> *"class SqlAlchemyUnitOfWork(AbstractUnitOfWork): def __enter__(self): self.session =
-> self.session_factory(); self.batches = SqlAlchemyRepository(self.session)"* — Cap. 6.
+> *"class SqlAlchemyUnitOfWork(AbstractUnitOfWork): … def __enter__(self): self.session =
+> self.session_factory() # type: Session self.batches =
+> repository.SqlAlchemyRepository(self.session) return super().__enter__()"* — Cap. 6.
 
 ### 4. Explicación paso a paso
 1. `UnidadDeTrabajoSQLAlchemy(fabrica_sesion)`: abre sesión + repo en `__enter__`;

@@ -16,9 +16,20 @@
 Una función de servicio que coordina repo + dominio + commit, sin lógica de negocio propia.
 
 ### 2. Cita de la fuente
-> *"def allocate(line, repo, session): batches = repo.list(); if not is_valid_sku(...):
-> raise InvalidSku(...); batchref = model.allocate(line, batches); session.commit();
-> return batchref"* — Cap. 4.
+> *"def allocate(line: OrderLine, repo: AbstractRepository, session) -> str: batches =
+> repo.list() if not is_valid_sku(line.sku, batches): raise InvalidSku(f'Invalid sku
+> {line.sku}') batchref = model.allocate(line, batches) session.commit() return batchref"* — Cap. 4.
+
+El mismo fragmento, con sus saltos de línea (el PDF los pierde):
+```python
+def allocate(line: OrderLine, repo: AbstractRepository, session) -> str:
+    batches = repo.list()
+    if not is_valid_sku(line.sku, batches):
+        raise InvalidSku(f'Invalid sku {line.sku}')
+    batchref = model.allocate(line, batches)
+    session.commit()
+    return batchref
+```
 
 ### 3. El dolor / necesidad
 Sin capa de servicios, la orquestación se filtra al endpoint o al modelo. La capa de

@@ -27,8 +27,9 @@ tests hay que `mock.patch` en cada prueba, y un refactor trivial rompe todos los
 1. **Handler con dependencia explícita:** `notificar_sin_stock(evento, notificaciones)`
    recibe la dependencia como argumento (no la importa).
 2. **Bootstrap** declara los defaults de producción y los puede sobreescribir.
-   > *"We want our bootstrap script to: 1) Declare default dependencies but allow us to
-   > override them … 4) Give us back the core object for our app, the message bus."* — Cap. 13.
+   > *"We want our bootstrap script to do the following: 1. Declare default dependencies
+   > but allow us to override them … 4. Give us back the core object for our app, the
+   > message bus"* — Cap. 13.
 3. **Inyección por inspección de la firma:** `inspect.signature(handler)` dice qué pide cada
    handler; se le pasan solo esas deps como kwargs y queda una función que solo pide el mensaje.
 4. En **tests** llamamos a `bootstrap()` con defaults sobreescritos (UoW falsa, notificaciones

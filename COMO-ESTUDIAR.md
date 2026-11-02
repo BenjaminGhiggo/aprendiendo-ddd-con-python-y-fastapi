@@ -69,6 +69,10 @@ uv sync                                                              # solo la p
 uv run python lecciones/05-listas-y-diccionarios/paso1_formulas.py  # ejecutar un paso
 uv run pytest lecciones/08-modulos-y-pytest -q                       # tests (desde la 08)
 ```
+> ⚠️ Corre pytest **una lección a la vez** (como arriba), nunca `uv run pytest lecciones/`.
+> Desde la 08 todas las lecciones tienen un `test_paso3_tu_turno.py` y un `paso3_tu_turno.py`
+> con el **mismo nombre**, y pytest se confunde si los junta. Además, hasta que completes tus
+> `# TODO`, esos tests salen en **rojo a propósito**.
 Para ver qué cambia entre tu versión y la solución, o entre la mala y la buena:
 ```bash
 git diff --no-index lecciones/05-listas-y-diccionarios/paso3_tu_turno.py lecciones/05-listas-y-diccionarios/paso4_tu_turno_solucion.py
