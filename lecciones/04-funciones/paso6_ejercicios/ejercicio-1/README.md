@@ -1,7 +1,7 @@
 # Ejercicio 1 — Un saludo reutilizable
 
 > Lección 04 · refuerzo. Cita (regla 6): *"def allocate(orderid: str, sku: str,
-> qty: int, ...) -> str:"* — Cap. 4.
+> qty: int, ...) -> str:"* — Cap. 5.
 
 **Problema:**
 1. Saluda a Ana, Benjamin y Carla con el mismo formato de bienvenida.
