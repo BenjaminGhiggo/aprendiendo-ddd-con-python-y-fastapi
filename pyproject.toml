@@ -17,4 +17,4 @@ dev = [
 # Las carpetas de ejercicios tienen archivos de prueba con nombres repetidos
 # (a propósito, para que cada ejercicio sea autocontenido). Se corren de forma
 # individual apuntando a su carpeta; la corrida global del repo las omite.
-norecursedirs = ["ejercicios"]
+norecursedirs = ["ejercicios", "paso6_ejercicios", "paso5_solucionario", ".venv", "node_modules"]
