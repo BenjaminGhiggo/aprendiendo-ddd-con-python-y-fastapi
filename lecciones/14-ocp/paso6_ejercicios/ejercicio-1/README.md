@@ -1,7 +1,7 @@
 # Ejercicio 1 — Descuentos sin tocar el núcleo
 
 > Lección 14 · refuerzo (OCP). Cita (regla 6): *"...open for extension but closed for
-> modification..."* — Cap. 1.
+> modification..."* — Introducción (nota 2).
 
 **Problema:**
 1. Calcular el precio final según el descuento, y poder agregar descuentos nuevos.
