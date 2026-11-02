@@ -1,4 +1,4 @@
-"""main.py — punto de entrada para DESPLEGAR la API del proyecto allocation (Render).
+"""main.py — punto de entrada para CORRER la API del proyecto allocation en tu computadora.
 
 No modifica el código del capítulo: usa tal cual el snapshot del Capítulo 13
 (fase-1/capitulos/13-dependency-injection/proyecto/) y solo lo "enchufa" a una base de
@@ -12,7 +12,7 @@ Agrega lo mínimo para que la API se pueda usar desde el navegador (/docs):
   - POST /lotes: crear stock. Es el equivalente del endpoint `add_batch` del libro
     ("A new service for add_batch (service_layer/services.py)" — Cap. 5).
   - Datos de ejemplo al arrancar (si la base está vacía).
-  - GET /salud: chequeo de vida que usa Render.
+  - GET /salud: chequeo de vida (responde {"estado": "ok"}).
 
 Correr en local (desde la raíz del repo):
     uv run uvicorn main:app --app-dir despliegue/api --reload
@@ -38,7 +38,7 @@ import orm                                            # noqa: E402
 from api import app, obtener_bus                      # noqa: E402
 from unidad_de_trabajo import UnidadDeTrabajoSQLAlchemy  # noqa: E402
 
-# 1. La base de datos: SQLite en un archivo (en Render se borra al reiniciar: es una demo).
+# 1. La base de datos: SQLite en un archivo (/tmp/allocation.db). Es una demo: bórralo para empezar de cero.
 #    Para algo persistente, definir DATABASE_URL con una URL de Postgres.
 URL_BD = os.environ.get("DATABASE_URL", "sqlite:////tmp/allocation.db")
 engine = create_engine(
@@ -63,7 +63,7 @@ app.description = (
     "3) `POST /asignar`, 4) `GET /asignaciones/{id_pedido}`.\n\n"
     "Lotes de ejemplo al arrancar: `lote-mesa-hoy` (MESA, 100, en almacén), "
     "`lote-mesa-manana` (MESA, 50, llega mañana) y `lote-silla-hoy` (SILLA, 20).\n\n"
-    "⚠️ Demo: la base SQLite se reinicia cuando Render reinicia el servicio."
+    "⚠️ Demo: la base es un SQLite en /tmp/allocation.db; bórralo para empezar de cero."
 )
 
 
