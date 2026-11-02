@@ -92,6 +92,9 @@ Detalle completo en `METODOLOGIA.md` §5. Resumen:
   `paso2_ejemplos_resueltos.py` · `paso3_tu_turno.py` (`# TODO`) · `paso4_tu_turno_solucion.py` ·
   `test_paso3_tu_turno.py` (desde la 08) · `paso5_solucionario/` · `paso6_ejercicios/`.
   Prefijo `pasoN_` (no `N_`) para que sean importables.
+- **pytest una lección a la vez** (`uv run pytest lecciones/NN-nombre -q`): desde la 08 todas repiten
+  `paso3_tu_turno.py` / `test_paso3_tu_turno.py`, y juntar dos lecciones da *import file mismatch*.
+  Los tests de `paso3` están en **rojo a propósito** hasta que el aprendiz complete los `# TODO`.
 - **Verificar siempre:** todo `.py` corre, tablas/claves salen de la salida real, Mermaid
   renderiza, citas existen en la fuente.
 - **Progreso:** `progreso/fase-0-python.md` separa *"Mi avance"* (lo marca el aprendiz) de

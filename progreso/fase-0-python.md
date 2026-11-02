@@ -1,5 +1,8 @@
 # Fase 0 — Python desde cero
 
+> Material: ✅ las 18 lecciones en formato formulario, verificadas (todos los `.py` corren,
+> pytest verde con la solución, Mermaid válido, 109 citas comprobadas contra la fuente).
+
 > No está en el libro: es el cimiento (regla 5) para poder leerlo.
 > 🏠 [Inicio](../README.md) · 📖 [Cómo estudiar](../COMO-ESTUDIAR.md) · 📚 [Índice de lecciones](../lecciones/README.md)
 
@@ -51,32 +54,32 @@ Cada lección está en formato **formulario** (README paso 0 + `paso1`…`paso6`
 de la salida real, Mermaid válido, citas comprobadas contra la fuente).
 
 ### Python básico (00–08)
-- [ ] **00 — ¿Qué es ejecutar un programa?** (instalar Python + `uv`)
-- [ ] **01 — Variables y tipos**
-- [ ] **02 — Condicionales (`if`/`else`)**
-- [ ] **03 — Bucles (`for`/`while`)**
-- [ ] **04 — Funciones**
-- [x] **05 — Listas y diccionarios** — ✅ formulario (14 + 11 fórmulas, 12 problemas)
-- [ ] **06 — Clases y objetos** (clase→instancia→objeto→uso, §3.6; Figura 1-3)
-- [ ] **07 — Excepciones**
-- [ ] **08 — Módulos, entorno con `uv` y primer `pytest`**
+- [x] **00 — ¿Qué es ejecutar un programa?** (instalar Python + `uv`) — ✅ formulario
+- [x] **01 — Variables y tipos** — ✅ formulario
+- [x] **02 — Condicionales (`if`/`else`)** — ✅ formulario
+- [x] **03 — Bucles (`for`/`while`)** — ✅ formulario
+- [x] **04 — Funciones** — ✅ formulario
+- [x] **05 — Listas y diccionarios** — ✅ formulario (plantilla de referencia)
+- [x] **06 — Clases y objetos** (clase→instancia→objeto→uso, §3.6; Figura 1-3) — ✅ formulario
+- [x] **07 — Excepciones** — ✅ formulario
+- [x] **08 — Módulos, entorno con `uv` y primer `pytest`** — ✅ formulario
 
 ### Programación Orientada a Objetos (POO) — a fondo
 > Continúa desde la Lección 06 (Clases y objetos). Base del modelo de dominio del libro.
 
-- [ ] **09 — Encapsulación** (proteger el estado del objeto)
-- [ ] **10 — Herencia** (reutilizar/extender una clase)
-- [ ] **11 — Polimorfismo** (misma interfaz, distintos comportamientos)
-- [ ] **12 — Abstracción** (clases abstractas, `ABC`)
+- [x] **09 — Encapsulación** (proteger el estado del objeto) — ✅ formulario
+- [x] **10 — Herencia** (reutilizar/extender una clase) — ✅ formulario
+- [x] **11 — Polimorfismo** (misma interfaz, distintos comportamientos) — ✅ formulario
+- [x] **12 — Abstracción** (clases abstractas, `ABC`) — ✅ formulario
 
 ### SOLID — los 5 principios (foco en SRP y DIP, los que usa el libro)
 > La Introducción del libro trata Encapsulation/Abstractions, Layering y el DIP.
 
-- [ ] **13 — SRP** (Responsabilidad única)
-- [ ] **14 — OCP** (Abierto/Cerrado)
-- [ ] **15 — LSP** (Sustitución de Liskov)
-- [ ] **16 — ISP** (Segregación de interfaces)
-- [ ] **17 — DIP** (Inversión de dependencias) ⭐ clave para el libro
+- [x] **13 — SRP** (Responsabilidad única) — ✅ formulario
+- [x] **14 — OCP** (Abierto/Cerrado) — ✅ formulario
+- [x] **15 — LSP** (Sustitución de Liskov) — ✅ formulario
+- [x] **16 — ISP** (Segregación de interfaces) — ✅ formulario
+- [x] **17 — DIP** (Inversión de dependencias) ⭐ clave para el libro — ✅ formulario
 
 ## Bitácora de preguntas (§3.5)
 | Fecha | Lección | La pregunta (W → X) |

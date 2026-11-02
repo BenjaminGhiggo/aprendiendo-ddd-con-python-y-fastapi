@@ -273,6 +273,9 @@ lecciones/NN-nombre/
 
 - Se usa `pasoN_…` y no `N_…` porque un módulo cuyo nombre empieza con un número **no se puede
   importar** (importa desde la Lección 08, con pytest).
+- **pytest se corre una lección a la vez** (`uv run pytest lecciones/NN-nombre -q`): desde la 08 todas
+  repiten `paso3_tu_turno.py` y `test_paso3_tu_turno.py`; juntar dos lecciones da *import file mismatch*.
+  Los tests de `paso3` empiezan en **rojo a propósito** (TDD: el aprendiz los pone en verde).
 - **Verificación obligatoria** antes de dar una lección por construida: todos los `.py` corren
   (código de salida 0), las tablas y claves salen de la salida real, los Mermaid renderizan y
   las citas existen en la fuente.
