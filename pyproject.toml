@@ -6,11 +6,15 @@ dependencies = [
     "fastapi>=0.162.0",
     "httpx>=0.28.1",
     "sqlalchemy>=2.1.6",
+    "uvicorn>=0.32",
 ]
 
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",
+]
+docs = [
+    "mkdocs-material>=9.5,<10",
 ]
 
 [tool.pytest.ini_options]

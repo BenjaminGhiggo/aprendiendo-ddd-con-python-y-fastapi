@@ -29,4 +29,4 @@ hace evolucionar. Para ver qué cambió entre capítulos, se comparan sus carpet
 
 - El código de un capítulo se corre con, p. ej.,
   `uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q`.
-- El avance detallado por secciones está en [`../progreso/`](../progreso/).
+- El avance detallado por secciones está en [`../../progreso/`](../../progreso/).
