@@ -2,6 +2,8 @@
 
 > Fase 1 · el libro (Parte II). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
 
+⬅️ [Capítulo 7 · Aggregates](../07-aggregates/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 9 · Going to Town on the Message Bus](../09-message-bus-a-fondo/)
+
 ---
 
 ## Micro-paso 1 — Eventos de dominio
@@ -69,3 +71,7 @@ uv run pytest fase-1/capitulos/08-events-message-bus/proyecto/ -q      # 28 pass
 ---
 
 > **Capítulo 8 completo.** Siguiente: **Capítulo 9 — Going to Town on the Message Bus**.
+
+---
+
+⬅️ [Capítulo 7 · Aggregates](../07-aggregates/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 9 · Going to Town on the Message Bus](../09-message-bus-a-fondo/)

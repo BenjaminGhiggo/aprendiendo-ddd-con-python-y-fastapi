@@ -1,6 +1,8 @@
 # Capítulo 4 — Service Layer + API (FastAPI)
 
 > Fase 1 · el libro. Capítulo autocontenido: clase (aquí), código en [`proyecto/`](proyecto/),
+
+⬅️ [Capítulo 3 · Coupling and Abstractions](../03-coupling-y-abstracciones/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 5 · TDD en marchas](../05-tdd-marchas/)
 > ejercicios en `ejercicios/`. **Regla 4:** el libro usa Flask; aquí usamos **FastAPI**.
 > (Se quitó el ejemplo de sincronización del cap. 3; era un interludio aparte.)
 
@@ -110,3 +112,7 @@ uv run pytest fase-1/capitulos/04-service-layer-fastapi/proyecto/ -q      # 24 p
 
 > **Capítulo 4 completo.** Capa de servicios + API FastAPI (3 capas: endpoint/servicio/dominio).
 > Siguiente: **Capítulo 5 — TDD in High Gear and Low Gear**.
+
+---
+
+⬅️ [Capítulo 3 · Coupling and Abstractions](../03-coupling-y-abstracciones/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 5 · TDD en marchas](../05-tdd-marchas/)

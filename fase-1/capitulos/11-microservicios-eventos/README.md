@@ -1,6 +1,8 @@
 # Capítulo 11 — Event-Driven Architecture: Microservicios
 
 > Fase 1 · el libro (Parte II). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
+
+⬅️ [Capítulo 10 · Commands and Command Handler](../10-commands/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 12 · CQRS](../12-cqrs/)
 > **Nota:** el libro usa **Redis** real; aquí se **simula** el canal pub/sub con un broker
 > en memoria (`cola_externa.py`), porque este entorno no tiene servidor Redis. El concepto
 > (eventos internos vs externos, Redis como adaptador fino) es idéntico.
@@ -64,3 +66,7 @@ uv run pytest fase-1/capitulos/11-microservicios-eventos/proyecto/ -q      # 29 
 ---
 
 > **Capítulo 11 completo.** Siguiente: **Capítulo 12 — CQRS**.
+
+---
+
+⬅️ [Capítulo 10 · Commands and Command Handler](../10-commands/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 12 · CQRS](../12-cqrs/)

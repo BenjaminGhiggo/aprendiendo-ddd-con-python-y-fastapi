@@ -2,6 +2,8 @@
 
 > Fase 1 · el libro (Parte II). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
 
+⬅️ [Capítulo 9 · Going to Town on the Message Bus](../09-message-bus-a-fondo/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 11 · Event-Driven Architecture](../11-microservicios-eventos/)
+
 ---
 
 ## Micro-paso 1 — Separar comandos de eventos
@@ -62,3 +64,7 @@ uv run pytest fase-1/capitulos/10-commands/proyecto/ -q      # 27 passed
 ---
 
 > **Capítulo 10 completo.** Siguiente: **Capítulo 11 — Event-Driven Microservices (Redis)**.
+
+---
+
+⬅️ [Capítulo 9 · Going to Town on the Message Bus](../09-message-bus-a-fondo/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 11 · Event-Driven Architecture](../11-microservicios-eventos/)

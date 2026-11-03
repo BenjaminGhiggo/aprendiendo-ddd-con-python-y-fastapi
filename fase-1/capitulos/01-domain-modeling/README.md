@@ -1,6 +1,8 @@
 # Capítulo 1 — Domain Modeling
 
 > Fase 1 · el libro. Este capítulo es autocontenido: la clase (aquí), el código en
+
+🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/)
 > [`proyecto/`](proyecto/) y los ejercicios en [`ejercicios/`](ejercicios/).
 
 Avanza en micro-pasos. Cada paso sigue la estructura 0–9.
@@ -263,3 +265,7 @@ uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q      # 13 passed
 
 > **Capítulo 1 completo.** El modelo de dominio (LineaPedido, Lote, asignar, SinStock)
 > está construido con TDD, sin base de datos ni web. Siguiente: **Capítulo 2 — Repository Pattern**.
+
+---
+
+🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/)

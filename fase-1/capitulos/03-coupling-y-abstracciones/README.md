@@ -1,6 +1,8 @@
 # Capítulo 3 — Coupling and Abstractions (interludio)
 
 > Fase 1 · el libro. Capítulo autocontenido: la clase (aquí), el código en
+
+⬅️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 4 · Service Layer + API](../04-service-layer-fastapi/)
 > [`proyecto/`](proyecto/) y los ejercicios en `ejercicios/`.
 > Interludio: no cambia el modelo de allocation; usa un ejemplo aparte (sincronizar carpetas)
 > para enseñar a **elegir abstracciones** y probar con *fakes*/datos simples.
@@ -100,3 +102,7 @@ uv run pytest fase-1/capitulos/03-coupling-y-abstracciones/proyecto/ -q      # 2
 
 > **Capítulo 3 completo.** Elegir abstracciones (Functional Core, Imperative Shell).
 > Siguiente: **Capítulo 4 — Service Layer + API (FastAPI)**.
+
+---
+
+⬅️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 4 · Service Layer + API](../04-service-layer-fastapi/)

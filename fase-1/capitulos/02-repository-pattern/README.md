@@ -1,6 +1,8 @@
 # Capítulo 2 — Repository Pattern
 
 > Fase 1 · el libro. Capítulo autocontenido: la clase (aquí), el código en
+
+⬅️ [Capítulo 1 · Domain Modeling](../01-domain-modeling/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 3 · Coupling and Abstractions](../03-coupling-y-abstracciones/)
 > [`proyecto/`](proyecto/) y los ejercicios en `ejercicios/`.
 > El `proyecto/` parte del código del Capítulo 1 y lo hace evolucionar.
 
@@ -183,3 +185,7 @@ uv run pytest fase-1/capitulos/02-repository-pattern/proyecto/ -q      # 19 pass
 
 > **Capítulo 2 completo.** Repository (puerto + fake + SQL), ORM imperativo (modelo sin
 > imports de ORM). Siguiente: **Capítulo 3 — Coupling and Abstractions**.
+
+---
+
+⬅️ [Capítulo 1 · Domain Modeling](../01-domain-modeling/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 3 · Coupling and Abstractions](../03-coupling-y-abstracciones/)

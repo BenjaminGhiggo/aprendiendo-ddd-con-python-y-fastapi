@@ -1,6 +1,8 @@
 # Capítulo 12 — CQRS (Command-Query Responsibility Segregation)
 
 > Fase 1 · el libro (Parte II). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
+
+⬅️ [Capítulo 11 · Event-Driven Architecture](../11-microservicios-eventos/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 13 · Dependency Injection](../13-dependency-injection/)
 > Idea central del capítulo: *"reads (queries) and writes (commands) are different, so they
 > should be treated differently (or have their responsibilities segregated)."* — Cap. 12.
 
@@ -137,3 +139,7 @@ uv run pytest fase-1/capitulos/12-cqrs/proyecto/ -q      # 32 passed
 > es un bug: es la propiedad de "si falla el read model, la asignación sigue funcionando".
 
 > **Capítulo 12 completo.** Siguiente: **Capítulo 13 — Dependency Injection (and Bootstrapping)**.
+
+---
+
+⬅️ [Capítulo 11 · Event-Driven Architecture](../11-microservicios-eventos/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 13 · Dependency Injection](../13-dependency-injection/)

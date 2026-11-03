@@ -1,6 +1,8 @@
 # Capítulo 13 — Dependency Injection (and Bootstrapping)
 
 > Fase 1 · el libro (Parte II, **cierre**). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
+
+⬅️ [Capítulo 12 · CQRS](../12-cqrs/) · 🏠 [Índice de capítulos](../README.md)
 > El último capítulo: reunimos la configuración y la inyección de dependencias en un solo sitio.
 
 ---
@@ -125,3 +127,7 @@ uv run pytest fase-1/capitulos/13-dependency-injection/proyecto/ -q      # 34 pa
 
 > **Capítulo 13 completo.** 🎉 **¡Fin de los 13 capítulos del libro!** (Quedan los apéndices
 > como material opcional de cierre — ver [`../../../progreso/apendices.md`](../../../progreso/apendices.md).)
+
+---
+
+⬅️ [Capítulo 12 · CQRS](../12-cqrs/) · 🏠 [Índice de capítulos](../README.md)

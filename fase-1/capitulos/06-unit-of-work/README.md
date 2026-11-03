@@ -2,6 +2,8 @@
 
 > Fase 1 · el libro. Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
 
+⬅️ [Capítulo 5 · TDD en marchas](../05-tdd-marchas/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 7 · Aggregates](../07-aggregates/)
+
 ---
 
 ## Micro-paso 1 — La UoW + fake + refactor del servicio
@@ -79,3 +81,7 @@ uv run pytest fase-1/capitulos/06-unit-of-work/proyecto/ -q      # 26 passed
 ---
 
 > **Capítulo 6 completo.** Siguiente: **Capítulo 7 — Aggregates and Consistency Boundaries**.
+
+---
+
+⬅️ [Capítulo 5 · TDD en marchas](../05-tdd-marchas/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 7 · Aggregates](../07-aggregates/)

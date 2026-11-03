@@ -2,6 +2,8 @@
 
 > Fase 1 · el libro (cierra la Parte I). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
 
+⬅️ [Capítulo 6 · Unit of Work](../06-unit-of-work/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 8 · Events and the Message Bus](../08-events-message-bus/)
+
 ---
 
 ## Micro-paso 1 — El agregado `Producto`
@@ -77,3 +79,7 @@ uv run pytest fase-1/capitulos/07-aggregates/proyecto/ -q      # 27 passed
 > **Capítulo 7 completo. ¡Parte I terminada!** (Dominio, Repository, Abstracciones, Service
 > Layer + FastAPI, TDD, Unit of Work, Aggregates.)
 > Siguiente: **Parte II — Capítulo 8: Events and the Message Bus**.
+
+---
+
+⬅️ [Capítulo 6 · Unit of Work](../06-unit-of-work/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 8 · Events and the Message Bus](../08-events-message-bus/)

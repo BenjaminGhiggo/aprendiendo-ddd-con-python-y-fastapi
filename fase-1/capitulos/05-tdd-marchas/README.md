@@ -2,6 +2,8 @@
 
 > Fase 1 · el libro. Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
 
+⬅️ [Capítulo 4 · Service Layer + API](../04-service-layer-fastapi/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 6 · Unit of Work](../06-unit-of-work/)
+
 ---
 
 ## Micro-paso 1 — Desacoplar los tests de servicio con primitivos
@@ -75,3 +77,7 @@ Entender cuándo subir a marcha alta (servicio) y cuándo bajar a marcha baja (d
 ---
 
 > **Capítulo 5 completo.** Siguiente: **Capítulo 6 — Unit of Work**.
+
+---
+
+⬅️ [Capítulo 4 · Service Layer + API](../04-service-layer-fastapi/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 6 · Unit of Work](../06-unit-of-work/)

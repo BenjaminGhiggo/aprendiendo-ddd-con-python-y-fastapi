@@ -2,6 +2,8 @@
 
 > Fase 1 · el libro (Parte II). Capítulo autocontenido (clase + `proyecto/` + `ejercicios/`).
 
+⬅️ [Capítulo 8 · Events and the Message Bus](../08-events-message-bus/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 10 · Commands and Command Handler](../10-commands/)
+
 ---
 
 ## Micro-paso 1 — El bus recolecta eventos de la UoW (cascada)
@@ -64,3 +66,7 @@ uv run pytest fase-1/capitulos/09-message-bus-a-fondo/proyecto/ -q      # 27 pas
 ---
 
 > **Capítulo 9 completo.** Siguiente: **Capítulo 10 — Commands and Command Handler**.
+
+---
+
+⬅️ [Capítulo 8 · Events and the Message Bus](../08-events-message-bus/) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 10 · Commands and Command Handler](../10-commands/)
