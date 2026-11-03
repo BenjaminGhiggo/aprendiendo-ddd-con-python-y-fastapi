@@ -2,7 +2,7 @@
 
 > Fase 1 · el libro. Este capítulo es autocontenido: la clase (aquí), el código en
 
-🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/)
+⬅️ [Fase 0 · Índice de lecciones](../../../lecciones/README.md) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/)
 > [`proyecto/`](proyecto/) y los ejercicios en [`ejercicios/`](ejercicios/).
 
 Avanza en micro-pasos. Cada paso sigue la estructura 0–9.
@@ -268,4 +268,4 @@ uv run pytest fase-1/capitulos/01-domain-modeling/proyecto/ -q      # 13 passed
 
 ---
 
-🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/)
+⬅️ [Fase 0 · Índice de lecciones](../../../lecciones/README.md) · 🏠 [Índice de capítulos](../README.md) · ➡️ [Capítulo 2 · Repository Pattern](../02-repository-pattern/)
